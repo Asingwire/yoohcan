@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Wowza Streaming Engine - README</title>
+	<script src="jwplayer.js"></script>
+	<script>jwplayer.key="HglrMHMi9wUmSJ+Jmc/zE1SekGmhSi61k4mISw==";</script>
+<head>
+<body>
+
+	<div id="player"></div>
+	<script>
+	/*
+    jwplayer("player").setup({
+        sources: [{
+            file: "rtmp://3e59a7.entrypoint.cloud.wowza.com/app-9f67/05f446d2"
+        }],
+        rtmp: {
+            bufferlength: 3
+        },
+        fallback: false,
+		autostart: true,
+		image: "http://www.yoohcan.tv/img/Front/slide_img.jpg",
+		width: "50%",
+        aspectratio: "12:5",
+		liveBroadcast: "Live broadcast",
+    });
+	*/
+	jwplayer("player").setup({
+        file: "https://storage.googleapis.com/prod-wse-recordings/transcoder_031539/111592_9cddb2b4.0.mp4",  
+		image: "http://www.yoohcan.tv/img/Front/slide_img.jpg",
+		width: "50%"
+    });
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+.dashboard-menu .dashbord-menu03 li .activeSelect{ color:#2299f1;}
+.dashbord-menu02 li.faq.activeSelect a{ background:url(../../img/Front/faq-icn.png) no-repeat left -28px;color:#2299f1;}
+
+.dashbord-menu02 li.help.activeSelect a{ background:url(../../img/Front/help_icn.png) no-repeat left -28px;color:#2299f1;}
+
+.profile-pic span img {
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.error-message{
+	color:tomato;
+}
+.error{
+	color:tomato;
+}
+
+.login-form input[type="button"]{
+	background: #ec008c none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 5px;
+	color: #fff;
+	display: inline;
+	font-family: "ProximaNovaA-Regular";
+	font-size: 16px;
+	margin: 25px 15px 25px 25px;
+	padding: 8px 35px;
+	width: auto;
+}
+
+.error-message{
+
+	color:tomato;
+
+}
+
+.account-setting input, .account-setting textarea, select {
+    border: 1px solid #dfe2e9;
+    border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    resize: none;
+    width: 100%;
+}
+
+
+.form_front {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #e8e9ed #e8e9ed;
+    border-image: none;
+    border-radius: 0 0 5px 5px;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    padding: 0;
+}
+
+
+/* form custom css */
+.signuptabcon {
+    margin: auto;
+    width: 560px;
+}
+.signinfrm {
+	width:100%;
+	float:left;
+	list-style-type:none;
+	display:block;
+	padding:20px 0;
+}
+.signinfrm li {
+	width:100% !important;
+	float:left;
+	list-style-type:none;
+	display:block;
+	padding:10px 0;
+}
+.signfild {
+	width:100%;
+	float:left;
+	height:48px;
+	border:1px solid #dedddd;
+	padding:0 5%;
+	font-size:14px;
+	color:#383b3e;
+	font-weight:400;
+}
+.signinfrm li a.forgotlink {
+	float:left;
+	font-size:14px;
+	color:#3a6fa5;
+	font-weight:400;
+	text-decoration:underline !important;
+	line-height:44px;
+}
+.signinfrm li a.forgotlink:hover {
+	color:#383b3e;
+	text-decoration:none;
+}
+
+.submit_btn{
+	background: #ec008c none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 5px;
+	color: #fff;
+	display: inline;
+	font-family: "ProximaNovaA-Regular";
+	font-size: 16px;
+	margin: 25px 15px 25px 25px;
+	padding: 8px 35px;
+	width: auto;
+}
+
+
+
+.signbtnfrm {
+	float:right;
+	width:150px;
+	height:44px;
+	text-align:center;
+	color:#fff;
+	font-size:14px;
+	font-weight:400;
+	text-transform:uppercase;
+	background:#00549f;
+	border:0;
+	
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	
+}
+.signbtnfrm:hover {
+	background:#315a84;
+}
+.frmleftbtn a img:hover, .frmrightbtn a img:hover{
+	opacity:1;
+}
+.signinfrm label {
+    color: #808fa4;
+    font-size: 15px;
+    font-weight: normal;
+}
+.ccv_box{
+	width:45%;
+	float:left;
+
+
+}
+.user-img-chanel{
+  border-radius: 100%;
+    height: 176px;
+    width: 183px;
+}
+	.banner_button {
+		top: 20px;
+		color: #fff;
+		right: 30px;
+		position: absolute;
+		}
+
+
+/* form custom css */
+
+.dropdown-menu > li > a:hover{
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0081c2;
+}

@@ -1,0 +1,5338 @@
+@charset "utf-8";
+/* CSS Document */
+@media all and (min-width:950px) and (max-width:1149px) {
+.HeadIn {
+ width: 940px;
+}
+.SliderBoxIn {
+ width: 940px;
+}
+ .MidTxtImgList {
+ padding: 0 0 24px;
+ width:940px;
+}
+.MidTxtImgLiRow {
+ margin: 12px;
+ position: relative;
+ width: 285px;
+}
+.MidTxtImgLiRow img {
+ width: 100%;
+}
+.NaviMidBox {
+ width: 940px;
+}
+.NaviMidList {
+ width: 240px;
+}
+.NaviMidList a span.NaviMidIcon {
+width:224px;
+height:224px;
+}
+ .AppMidBox {
+ width: 940px;
+}
+.AppMidBoxRi {
+ float: right;
+ width: 485px;
+}
+.FoterIn {
+ margin: auto;
+ width: 940px;
+}
+.MidTxtLi p {
+padding: 100px 0 0;
+}
+ .MidTabNaviBox {
+ width:940px;
+}
+ .MidTabNavi li a {
+ font-size: 16px;
+}
+ .MidTabConBox {
+ width:780px;
+}
+
+
+/*------------------------------14/08/2014----------Listing Page-------------------*/
+.SrhFildHead {
+width:160px;
+}
+ .MidSubPageRow {
+ margin: auto;
+ width: 940px;
+}
+
+/*------------------------------18/08/2014----------contact us Page-------------------*/
+
+.MidHeadContact h1 {
+ margin: auto;
+ width: 940px;
+}
+.MidConBox {
+ margin: auto;
+ width: 940px;
+}
+.ContactFrmLeft {
+ float: left;
+ width: 530px;
+}
+.ConctMidMap img {
+width:100%;
+}
+
+/*----------------------Add Business Page----------------------------*/
+.AddBusinessTab {
+width:940px;
+}
+.AddBusinessTab li {
+margin: 0 25px;
+}
+ .JoinNowBoxIn {
+width:940px;
+margin:auto;
+}
+.AddBusiMidTxt {
+width:700px;
+}
+.AddBusiMidFrmRow {
+width:700px;
+}
+.AddBusiFild {
+width:190px;
+}
+.AddBusiSeFild {
+width:218px;
+}
+.AddBusiFrmSubmit {
+width:700px;
+}
+
+
+/*----------------------Advertise Page----------------------------*/
+
+.AddBusiMid.AdvertiseMiddBox .AddBusiMidTxt {
+ width: 910px;
+}
+ .AddBusiMid.AdvertiseMiddBox .AddBusiMidFrmRow {
+ width: 910px;
+}
+ .AddBusiMid.AdvertiseMiddBox .AddBusiFrmSubmit {
+ width: 910px;
+}
+ .AdverListIn {
+ width: 940px;
+}
+ .AdverListRow {
+ float: left;
+ margin: 0 5px;
+ width: 300px;
+}
+.AddCityFild {
+width:215px;
+}
+
+/*----------------------Add Business Page----------------------------*/
+
+.AbtMidSliderIn p img {
+ padding: 10px 0 0;
+ width:100%;
+}
+ .AbtMidLiRow {
+ width: 295px;
+}
+ .AbtImgTxtLiRow {
+ margin: 5px;
+}
+.AbtMidFrmIn {
+width:940px;
+margin:auto;
+}
+.AbtSocialMid {
+width:940px;
+margin:auto;
+}
+.AbtImgTxtListIn {
+width:940px;
+margin:auto;
+}
+.AbtTxtMidIn {
+width:940px;
+margin:auto;
+}
+.AbtMidListIn {
+width:940px;
+margin:auto;
+}
+.AbtMidBoxIn {
+width:940px;
+margin:auto;
+padding:25px 0;
+}
+.AbtMidSliderIn {
+width:940px;
+margin:auto;
+padding:20px 0;
+}
+.AboutMidBanIn {
+width:940px;
+margin:auto;
+padding:20px 0;
+}
+.UserTxtAbt h1 {
+font-size:45px;
+font-weight:400;
+text-align:center;
+color:#fff;
+}
+.UserTxtAbt p {
+font-size:23px;
+padding:10px 0;
+font-weight:400;
+text-align:center;
+color:#fff;
+}
+.AbtMidSliderIn h2 {
+font-size:30px;
+font-weight:700;
+text-align:center;
+color:#009900;
+padding:5px 0;
+}
+.AbtMidSliderIn p {
+font-size:16px;
+font-weight:400;
+text-align:center;
+color:#3b3b3b;
+padding:10px 0;
+line-height:32px;
+}
+.AbtMidBoxIn h2 {
+font-size:45px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:20px 0 10px;
+}
+.AbtMidBoxIn p {
+font-size:16px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:15px 0;
+line-height:32px;
+}
+.AbtMidBoxIn p span {
+font-size:20px;
+font-weight:400;
+text-align:center;
+color:#fff;
+line-height:32px;
+}
+.AbtMidLTxt h2 {
+font-size:25px;
+color:#3b3b3b;
+font-weight:700;
+text-align:center;
+padding:10px 0;
+}
+.AbtMidLTxt p {
+font-size:16px;
+color:#3b3b3b;
+font-weight:400;
+text-align:center;
+padding:0 0;
+line-height:25px;
+}
+.AbtTxtMidLeft p {
+width:100%;
+float:left;
+padding:10px 0;
+font-size:18px;
+color:#fff;
+font-weight:400;
+line-height:32px;
+text-align:justify;
+}
+.AbtTxtMidLeft p label {
+padding:0 0;
+font-size:16px;
+color:#fff;
+font-weight:400;
+line-height:104px;
+}
+.AbtTxtMidRight p {
+width:100%;
+float:left;
+padding:10px 0;
+font-size:18px;
+color:#fff;
+font-weight:400;
+line-height:32px;
+text-align:justify;
+}
+.AbtTxtMidRight p label {
+padding:0 0;
+font-size:16px;
+color:#fff;
+font-weight:400;
+line-height:104px;
+}
+.AbtImgTxtListIn h2 {
+font-size:30px;
+font-weight:700;
+color:#009900;
+padding:10px 0;
+text-align:center;
+}
+.AbtImgTxtListIn p {
+font-size:16px;
+font-weight:400;
+color:#3b3b3b;
+padding:0 0;
+text-align:center;
+line-height:32px;
+}
+.AbtTxtLiRow h3 {
+padding:5px 0;
+text-align:center;
+font-size:23px;
+font-weight:700;
+color:#fff;
+}
+.AbtTxtLiRow p {
+padding:0px 0;
+text-align:center;
+font-size:14px;
+font-weight:400;
+color:#fff;
+line-height:16px;
+}
+.AbtSocialMid h2 {
+font-size:45px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:10px 0;
+}
+.AbtSocialMid p {
+padding:10px 0;
+text-align:center;
+font-size:18px;
+font-weight:400;
+color:#fff;
+line-height:32px;
+}
+.AbtMidFrmIn h2 {
+font-size:30px;
+color:#009900;
+padding:10px 0;
+text-align:center;
+}
+
+
+/*--------------Dashbord page------------------*/
+
+
+.DashBordMidIn {
+ margin: auto;
+ width:940px;
+}
+ .LeftDashBord {
+ float: left;
+ width: 530px;
+}
+ .DashMidLTxt {
+ float: left;
+ width: 395px;
+}
+
+
+/*--------------Detail page------------------*/
+.Container {
+width:940px;
+margin:auto;
+}
+.TabRatingLeft {
+ float: left;
+ width: 540px;
+}
+.PhotoListRi {
+width: 375px;
+}
+.PhotoListRiMid li {
+width: 67px;
+}
+.DetailLeft {
+ width: 700px;
+}
+ .HighlightsLeft {
+ float: left;
+ width: 400px;
+}
+.FirstUserBy {
+margin: 15px 0 0;
+ width: 290px;
+}
+ .UserDetailLeft {
+ float: left;
+ width: 215px;
+}
+ .LocationMap {
+ float: right;
+ padding: 12px 0;
+ width: 475px;
+}
+ .FacebookShare {
+ float: left;
+ width: 33%;
+}
+.UserRevLiTxt {
+width: 570px;
+}
+ .RightBannerOut {
+ float: left;
+ padding: 10px 0 0;
+ position: relative;
+ right: 0;
+ text-align: center;
+ top: 0;
+ width: 100%;
+}
+
+/*------------------------------05/09/2014----------Store List Page-------------------*/
+.StoreListRight {
+width: 460px;
+}
+.RightListBox {
+width: 450px;
+}
+.StoreListTab li a {
+padding: 0 12px;
+font-size: 16px;
+}
+.StoreListTabM li a {
+ padding: 0 11px 8px;
+}
+.StoreListRow {
+width: 428px;
+}
+ .StoreListTxt {
+ float: left;
+ width: 210px;
+}
+
+
+
+/*--------------Profile-page page------------------*/
+
+.ProfTxtRi {
+ float: right;
+ width: 770px;
+}
+ .ProfTxtRiTpLe {
+ float: left;
+ width: 560px;
+}
+ .ProfMidRight {
+ float: right;
+ padding: 12px 0;
+ width: 340px;
+}
+ .ProfMidLeft {
+ float: left;
+ width: 586px;
+}
+ .ProfMidLeft .UserRevLiTxt {
+ width: 473px;
+}
+ .UserProLi {
+ float: left;
+ padding: 0 0 15px;
+ width: 100%;
+}
+.ProfwidLiTxt h3 {
+font-size:20px;
+}
+
+
+
+
+
+/*----------------------Profile Network page------------------10-09-2014-----------*/
+.FollowLiTxt p {
+font-size:12px;
+}
+ .TabRewLeft.TabRewLeRew {
+width: 325px;
+}
+.TabRewLeft.TabRewLeRew li {
+padding: 0 20px 0 0;
+}
+
+/*----------------------Wishlist page------------------10-09-2014-----------*/
+.FollowLiTxt p a.AddWishlistBtn.RemoveListBtn {
+padding: 0 5px;
+font-size: 12px;
+}
+/*----------------------Claim listing page------------------10-09-2014-----------*/
+.AddBusiMidFild.AdverFild .AddBusiFild.ClamListFild {
+ width: 50%;
+}
+.ClamLiHeadLeft h2 {
+font-size: 26px;
+}
+.ClamLiHeadLeft {
+width: 580px;
+}
+.ClamListRow {
+width: 410px;
+}
+.ClamListLeft {
+ float: left;
+ width: 100%;
+}
+.ClamListRight {
+width:100%;
+padding: 10px 0 0;
+}
+a.ClaimResBtn {
+width:100%;
+padding:0;
+text-align:center;
+}
+.ClaimFrmList {
+top: 142px;
+}
+ .ClaimFrmArrow {
+ right: 0;
+ text-align: center;
+ top: -12px;
+ width: 100%;
+}
+
+/*----------------------stats page------------------10-09-2014-----------*/
+.StatMidTp .ProfileRating li a span {
+ width: 19px;
+}
+.StatMBLeft {
+width: 390px;
+}
+
+
+
+/*-------------------------22-09-2014-------------------*/
+.AddCityFild.EditBirthSeFild {
+width:28%;
+}
+.TabMenuMid li a {
+font-size:13px;
+}
+
+
+.ImgDetMidWrp {
+width:940px;
+}
+.ImgDeLeft {
+width: 65%;
+}
+.ImgDeRight {
+width: 34%;
+}
+
+.TabRewLeft.UserPopImgLi li {
+    padding: 0 15px 0 0;
+}
+
+.CmtListBox {
+ max-height: 137px;
+}
+
+
+/***************************25-09-2014*************************/
+
+.DashBanTxt h1 {
+font-size: 50px;
+}
+
+
+/*----------Blog Css----------*/
+
+.BlogTopBg {
+background-position:-110px 0;
+}
+h1.BlogHeading {
+font-size:80px;
+}
+
+.BlogListMid {
+width:900px;
+}
+.BlogListRow {
+width:860px;
+}
+
+
+
+.MidTabConBox.eidtBusiness div.error-message {
+    float: right;
+    width: 69%;
+}
+
+.EditProfFrmb.FrmMidBox li .checkboxFe {
+    float: left;
+    width: 65%;
+}
+
+
+
+
+.MidTabConBox.EditProfilebOwner .EditProfFild {
+    width: 397px;
+}
+
+.DashBordTabLe.SettingTabDash li ul.TabSubMenu {
+width: 530px;
+}
+
+}
+ @media all and (min-width:768px) and (max-width:949px) {
+.HeadIn {
+ width:750px;
+}
+.SliderBoxIn {
+ width: 750px;
+}
+ .MidTxtImgList {
+ padding: 0 0 24px;
+ width:750px;
+}
+.MidTxtImgLiRow {
+ margin: 12px;
+ position: relative;
+ width: 220px;
+}
+.MidTxtImgLiRow img {
+ width: 100%;
+}
+ .MidTxtImgList h2 {
+ font-size:28px;
+ padding: 30px 0 20px;
+}
+.MidTxtLi p {
+ font-size: 20px;
+ padding: 72px 0 0;
+}
+.NaviMidBox {
+ width: 750px;
+}
+.NaviMidList {
+ width: 182px;
+ margin: 0 30px;
+}
+.NaviMidList a span.NaviMidIcon {
+width:166px;
+height:166px;
+background-size:50% !important;
+}
+ .NaviMidList a label {
+ font-size: 25px;
+}
+ .AppMidBox {
+ width: 750px;
+}
+ .AppMidImgLeft {
+ float: left;
+ width: 280px;
+}
+.AppMidImgLeft img {
+width:100%;
+}
+ .AppMidTxtRi h2 {
+ font-size: 40px;
+}
+ .AppMidBoxRi {
+ float: right;
+ width: 448px;
+}
+.FoterIn {
+ margin: auto;
+ width: 750px;
+}
+ .FtrLeft {
+ float: left;
+ width: 478px;
+}
+ .MidTabNaviBox {
+ width:750px;
+}
+ .MidTabNavi li a {
+ font-size: 15px;
+ padding:0 9px;
+}
+.TopStoreList {
+margin:3px;
+}
+ .MidTabConBox {
+ width:750px;
+}
+
+
+
+
+/*------------------------------14/08/2014----------Listing Page-------------------*/
+.SrhFildHead {
+width:70px;
+}
+.SrhCityHeadRow {
+width:85px;
+padding:0 10px;
+}
+.MidHeading h1 {
+ font-size:30px;
+}
+ .MidSubPageRow {
+ margin: auto;
+ width:750px;
+}
+
+
+/*------------------------------18/08/2014----------contact us Page-------------------*/
+
+.MidHeadContact h1 {
+ margin: auto;
+ width:750px;
+}
+.MidConBox {
+ margin: auto;
+ width:750px;
+}
+.ConctMidMap img {
+width:100%;
+}
+ .ContactFrmLeft {
+ float: left;
+ width: 430px;
+}
+ .ContactFrmLRight {
+ float: right;
+ width: 295px;
+}
+
+
+/*----------------------Add Business Page----------------------------*/
+.AddBusinessTab {
+width:750px;
+}
+.AddBusinessTab li {
+margin: 0 10px;
+}
+.AddBusinessTab li a {
+width: 225px;
+}
+.AddBusinessTab li a label.AddBusinTxtTab {
+font-size:25px;
+}
+.JoinNowBoxIn {
+width:750px;
+margin:auto;
+}
+.JoinNowBoxIn p {
+font-size:25px;
+}
+ .AddBusiMidTxt {
+width:500px;
+}
+.AddBusiMidFrmRow {
+width:500px;
+}
+.AddBusiFild {
+width:128px;
+}
+.AddBusiSeFild {
+width:150px;
+}
+.AddBusiFrmSubmit {
+width:500px;
+}
+
+/*----------------------Advertise Page----------------------------*/
+
+.AddBusiMid.AdvertiseMiddBox .AddBusiMidTxt {
+ width:700px;
+}
+ .AddBusiMid.AdvertiseMiddBox .AddBusiMidFrmRow {
+ width:700px;
+}
+ .AddBusiMid.AdvertiseMiddBox .AddBusiFrmSubmit {
+ width:700px;
+}
+ .AdverListIn {
+ width:700px;
+}
+ .AdverListRow {
+ float: left;
+ margin: 0 15px;
+ width: 200px;
+}
+.AdverListImg img {
+width:100%;
+}
+.AdverListImg {
+height:200px;
+}
+.AddCityFild {
+width:140px;
+}
+
+
+
+
+
+/*----------------------Add Business Page----------------------------*/
+
+.AbtMidSliderIn p img {
+ padding: 10px 0 0;
+ width:100%;
+}
+ .AbtMidLiRow {
+ width: 350px;
+}
+ .AbtTxtMidRight {
+ float: right;
+ margin: 5px 2% 5px 0;
+}
+ .AbtTxtMidLeft {
+ margin: 5px 0 5px 2%;
+}
+ .AbtImgTxtLiRow {
+ margin: 5px;
+}
+.AbtMidFrmIn {
+width:750px;
+margin:auto;
+}
+.AbtSocialMid {
+width:750px;
+margin:auto;
+}
+.AbtImgTxtListIn {
+width:750px;
+margin:auto;
+}
+.AbtTxtMidIn {
+width:750px;
+margin:auto;
+}
+.AbtMidListIn {
+width:750px;
+margin:auto;
+}
+.AbtMidBoxIn {
+width:750px;
+margin:auto;
+padding:25px 0;
+}
+.AbtMidSliderIn {
+width:750px;
+margin:auto;
+padding:20px 0;
+}
+.AboutMidBanIn {
+width:750px;
+margin:auto;
+padding:20px 0;
+}
+.UserTxtAbt h1 {
+font-size:40px;
+font-weight:400;
+text-align:center;
+color:#fff;
+}
+.UserTxtAbt p {
+font-size:20px;
+padding:10px 0;
+font-weight:400;
+text-align:center;
+color:#fff;
+}
+.AbtMidSliderIn h2 {
+font-size:27px;
+font-weight:700;
+text-align:center;
+color:#009900;
+padding:5px 0;
+}
+.AbtMidSliderIn p {
+font-size:15px;
+font-weight:400;
+text-align:center;
+color:#3b3b3b;
+padding:10px 0;
+line-height:32px;
+}
+.AbtMidBoxIn h2 {
+font-size:40px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:20px 0 10px;
+}
+.AbtMidBoxIn p {
+font-size:15px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:15px 0;
+line-height:32px;
+}
+.AbtMidBoxIn p span {
+font-size:18px;
+font-weight:400;
+text-align:center;
+color:#fff;
+line-height:32px;
+}
+.AbtMidLTxt h2 {
+font-size:23px;
+color:#3b3b3b;
+font-weight:700;
+text-align:center;
+padding:10px 0;
+}
+.AbtMidLTxt p {
+font-size:15px;
+color:#3b3b3b;
+font-weight:400;
+text-align:center;
+padding:0 0;
+line-height:25px;
+}
+.AbtTxtMidLeft p {
+width:100%;
+float:left;
+padding:10px 0;
+font-size:16px;
+color:#fff;
+font-weight:400;
+line-height:32px;
+text-align:justify;
+}
+.AbtTxtMidLeft p label {
+padding:0 0;
+font-size:15px;
+color:#fff;
+font-weight:400;
+line-height:104px;
+}
+.AbtTxtMidRight p {
+width:100%;
+float:left;
+padding:10px 0;
+font-size:16px;
+color:#fff;
+font-weight:400;
+line-height:32px;
+text-align:justify;
+}
+.AbtTxtMidRight p label {
+padding:0 0;
+font-size:15px;
+color:#fff;
+font-weight:400;
+line-height:104px;
+}
+.AbtImgTxtListIn h2 {
+font-size:27px;
+font-weight:700;
+color:#009900;
+padding:10px 0;
+text-align:center;
+}
+.AbtImgTxtListIn p {
+font-size:15px;
+font-weight:400;
+color:#3b3b3b;
+padding:0 0;
+text-align:center;
+line-height:32px;
+}
+.AbtTxtLiRow h3 {
+padding:5px 0;
+text-align:center;
+font-size:20px;
+font-weight:700;
+color:#fff;
+}
+.AbtTxtLiRow p {
+padding:0px 0;
+text-align:center;
+font-size:14px;
+font-weight:400;
+color:#fff;
+line-height:16px;
+}
+.AbtSocialMid h2 {
+font-size:40px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:10px 0;
+}
+.AbtSocialMid p {
+padding:10px 0;
+text-align:center;
+font-size:16px;
+font-weight:400;
+color:#fff;
+line-height:32px;
+}
+.AbtMidFrmIn h2 {
+font-size:27px;
+color:#009900;
+padding:10px 0;
+text-align:center;
+}
+
+
+
+
+
+
+
+/*--------------Dashbord page------------------*/
+
+
+.DashBordMidIn {
+ margin: auto;
+ width:750px;
+}
+ .LeftDashBord {
+ float: left;
+ width: 342px;
+}
+ .DashMidLTxt {
+ float: left;
+ width: 395px;
+}
+ .DashMidLimg {
+ float: left;
+ padding:10px 0 10px;
+ text-align: center;
+ width: 100%;
+}
+ .DashMidLTxt {
+ float: left;
+ width: 100%;
+}
+ .DashLiTopleft {
+ float: left;
+ width: 100%;
+ padding:0 0 15px;
+}
+ .DashLiTopRight {
+ float: none;
+ margin: auto;
+ width: 150px;
+}
+ .DashLiTxtBotm {
+ float: left;
+ padding: 15px 0 0;
+ width: 100%;
+}
+.ListCmtIcon li {
+padding:0 18px;
+}
+.DashMidLiRow {
+width:94%;
+padding:0 3%;
+}
+ .DashMidList h2 {
+font-size:21px;
+}
+.ShopFollowRow h2 {
+font-size:21px;
+}
+
+/*--------------Detail page------------------*/
+.Container {
+width:750px;
+margin:auto;
+}
+ .GrayDeLeft {
+ width: 510px;
+}
+ .GrayDeLeft h2 {
+ color: #009900;
+ font-size: 22px;
+}
+.TabRatingLeft {
+width:100%;
+}
+ .PhotoListRi {
+width:100%;
+margin:0 0 15px;
+}
+.PhotoListRiMid li {
+margin: 0 32px;
+}
+ .DetailLeft {
+ width: 100%;
+}
+ .HighlightsLeft {
+ float: left;
+ width: 400px;
+}
+.FirstUserBy {
+margin: 15px 0 0;
+ width: 290px;
+}
+ .UserDetailLeft {
+ float: left;
+ width: 215px;
+}
+ .LocationMap {
+ float: right;
+ padding: 12px 0;
+ width: 475px;
+}
+ .FacebookShare {
+ float: left;
+ width: 33%;
+}
+.UserRevLiTxt {
+width: 620px;
+}
+ .RightBannerOut {
+ float: left;
+ padding: 10px 0 0;
+ position: relative;
+ right: 0;
+ text-align: center;
+ top: 0;
+ width: 100%;
+}
+.DetailRight {
+width:100%;
+}
+.RightBanAd {
+width:250px;
+}
+/*------------------------------05/09/2014----------Store List Page-------------------*/
+
+.StoreListLeft {
+ float: left;
+ width: 100%;
+}
+.TypeStoreLeftLi li label {
+width:95%;
+}
+.FeaListLeftSe li label {
+width:95%;
+}
+ .StoreListRight {
+ border-left: 0 solid #d9d9cd;
+ float: right;
+ width: 100%;
+}
+ .RightListBox {
+ float: right;
+ width: 100%;
+}
+.StoreListRow {
+margin: 5px 2%;
+ width: 96%;
+}
+.OpenposList li span.OpenposLiLeft {
+width: 60%;
+}
+.OpenposList li label.OpenposLiRight {
+ width: 30%;
+}
+ .PrivacyMidBox p {
+font-size:15px;
+line-height:22px;
+}
+.PrivacyMidBox h3 {
+font-size:22px;
+}
+.PrivacyMidBox ul {
+padding:5px 0;
+margin:0 0 0 20px;
+}
+.PrivacyMidBox ul li {
+padding:6px 0 6px 0px;
+font-size:15px;
+line-height:22px;
+}
+/*--------------Profile-page page------------------*/
+
+.ProfTxtRi {
+ float: right;
+ width: 576px;
+}
+ .ProfTxtRiTpLe {
+ float: left;
+ width: 100%;
+}
+.ProfTxtRiLi {
+width:100%;
+}
+.ProfTxtRiLi li {
+width:30%;
+}
+.ProfileRating li a span {
+width: 15px;
+}
+ .ProfMidLeft {
+ float: left;
+ width: 100%;
+}
+ .ProfMidLeft .UserRevLiTxt {
+ width: 620px;
+}
+ .ProfMidRight {
+ float: right;
+ padding: 12px 0;
+ width: 100%;
+}
+.RecViewList {
+width:49%;
+}
+
+
+/*----------------------Claim listing page------------------10-09-2014-----------*/
+.AddBusiMidFild.AdverFild .AddBusiFild.ClamListFild {
+ width: 50%;
+}
+ .ClamLiHeadLeft h2 {
+font-size: 26px;
+}
+.ClamLiHeadLeft {
+margin-bottom: 15px;
+ width:96%;
+}
+ .ClamLiHeadRight {
+ float: right;
+ padding: 0;
+ width: 97%;
+}
+a.AnGreenBtn {
+float:left;
+}
+.ClamListRow {
+width: 315px;
+}
+.ClamListLeft {
+ float: left;
+ width: 100%;
+}
+.ClamListRight {
+width:100%;
+padding: 10px 0 0;
+}
+a.ClaimResBtn {
+width:100%;
+padding:0;
+text-align:center;
+}
+.ClaimFrmList {
+top: 142px;
+}
+ .ClaimFrmArrow {
+ right: 0;
+ text-align: center;
+ top: -12px;
+ width: 100%;
+}
+
+/*-------------------------22-09-2014-------------------*/
+.AddCityFild.EditBirthSeFild {
+width:28%;
+margin: 0 5px 0 0;
+}
+.TabMenuMid li {
+width: 49%;
+border-top: 1px solid #ddd;
+}
+
+
+.LogWithIn li img{
+width: 220px;
+}
+
+
+
+
+.ImgDetMidWrp {
+width:750px;
+display:block;
+}
+.ImgDeLeft {
+width:98%;
+}
+.ImgDeRight {
+width:100%;
+-moz-border-radius:0 0 6px 6px;
+	-webkit-border-radius:0 0 6px 6px;
+	-khtml-border-radius:0 0 6px 6px;
+	border-radius:0 0 6px 6px;
+}
+
+
+.TabMenuMid li.FindFriTab {
+width:100%;
+}
+
+
+/***************************25-09-2014*************************/
+.DashBanTxt h1 {
+font-size: 38px;
+}
+.DashBanTxt p span {
+font-size: 25px;
+}
+.UserInfoBan li.WidthAutoLi {
+    margin: 0;
+    width: 100%;
+}
+.DashTxtInLeft {
+    float: left;
+    width: 300px;
+}
+
+
+/*----------Blog Css----------*/
+
+.BlogTopBg {
+background-position:-110px 0;
+}
+h1.BlogHeading {
+font-size:60px;
+}
+.BlogListMid {
+width:700px;
+}
+.BlogListRow {
+width:660px;
+}
+.BlogLiTxtTop h2 {
+font-size:35px;
+}
+
+
+
+
+.EditProfFrmb.FrmMidBox li Select.EditProfFild.EditProfFildHour {
+    padding: 12px 15px;
+    width: 205px;
+}
+
+
+
+.MidTabConBox.eidtBusiness div.error-message {
+    float: right;
+    width: 97%;
+}
+
+
+.MidTabConBox.EditProfilebOwner .EditProfFild {
+    width: 308px;
+}
+
+
+.DashBordTabLe.SettingTabDash li ul.TabSubMenu {
+width: 342px;
+}
+
+
+/*-------------------------02-12-2014-------------------*/
+.StepTabReview .TabMenuMid li.FindFriTab {
+    width: 32%;
+}
+.StepTabReview .TabMenuMid li {
+    border-top:0px solid #ddd;
+    width: 32%;
+}
+.StepTabReview .TabMenuMid li a {
+font-size: 14px;
+}
+
+.StepTabReview .TabMenuMid li ul.DateDropMenu li {
+    border-top: 0 solid #ddd;
+    width:100%;
+}
+
+
+
+.SrhBoxIn.HeaderSrhBox {
+width:362px;
+}
+
+
+}
+ @media all and (min-width:600px) and (max-width:767px) {
+.HeadIn {
+ width:580px;
+}
+.SliderBoxIn {
+ width: 580px;
+}
+ .MidTxtImgList {
+ padding: 0 0 24px;
+ width:580px;
+}
+.MidTxtImgLiRow {
+ margin: 12px;
+ position: relative;
+ width: 260px;
+}
+.MidTxtImgLiRow img {
+ width: 100%;
+}
+ .MidTxtImgList h2 {
+ font-size:28px;
+ padding: 30px 0 20px;
+}
+.MidTxtLi p {
+ font-size: 20px;
+ padding: 94px 0 0;
+}
+.NaviMidBox {
+ width: 580px;
+}
+/*.NaviMidList {
+   width: 182px;
+     margin: 0 30px;
+}*/
+/*.NaviMidList a span.NaviMidIcon {
+width:166px;
+height:166px;
+background-size:50% !important;
+}*/
+
+.NaviMidList {
+ float: none;
+ margin: auto;
+ width: 280px;
+}
+ .NaviMidList a {
+ float: left;
+ margin: 15px 0;
+ width: 100%;
+}
+ .MidConnect {
+ background:url(../../img/images_eng/mid-bg-2.jpg) repeat-y center top;
+ width:100%;
+ height:auto;
+ border-top:1px dashed #cda760;
+ margin:-1px 0 0 0;
+ padding:0 0 15px 0;
+}
+ .MidLogo {
+ padding: 0 0 15px;
+}
+ .NaviMidList a label {
+ font-size: 25px;
+}
+ .AppMidBox {
+ width: 580px;
+}
+ .AppMidImgLeft {
+ float: none;
+ margin: auto;
+ width: 350px;
+}
+.AppMidImgLeft img {
+width:100%;
+}
+ .AppMidTxtRi h2 {
+ font-size: 40px;
+}
+ .AppMidBoxRi {
+ float: right;
+ margin: 20px 0 0;
+ width: 100%;
+ text-align: center;
+}
+ .AppVideo {
+ padding: 10px 0;
+ text-align: center;
+ width: 100%;
+}
+.FoterIn {
+ margin: auto;
+ width: 580px;
+}
+ .FtrLeft {
+ float: left;
+ text-align: center;
+ width: 100%;
+}
+ .FtrRight {
+ float: none;
+ margin: auto;
+ padding: 0;
+ width: 215px;
+}
+ .FtrRiTop {
+ float: left;
+ margin: 15px 0 0;
+ width: 100%;
+}
+ .Navigation {
+background:url(../../img/images_eng/nav_icon.png) no-repeat;
+width:40px;
+float:left;
+height:50px;
+position:relative;
+ margin: 21px 27px 0 0;
+}
+.Navi {
+position:absolute;
+width:300px;
+right:0;
+top:30px;
+background:#fff;
+}
+.Navi li {
+width:96%;
+float:left;
+margin:2px 1.2%;
+padding:0;
+}
+.Navi li a {
+width:100%;
+padding:0;
+text-align:center;
+}
+.Navigation:hover .Navi {
+display:block;
+}
+ .SliderBoxIn h2 {
+ color: #fff;
+ font-size: 30px;
+}
+ .SliderBoxIn h1 {
+ font-size: 40px;
+}
+ .MidConnectBotm p {
+ color: #fff;
+}
+
+/*---------------Login-----------------*/
+
+.PopWrp {
+ margin: auto;
+ width: 550px;
+}
+ .MidTabNaviBox {
+ width:580px;
+}
+.MidTabBoxTop {
+height:auto;
+}
+ .MidTabNavi li {
+width:31%;
+border-bottom:1px solid #292927;
+}
+ .MidTabNavi li.Last {
+ border-right:1px solid #292927;
+}
+.MidTabNavi li a {
+ font-size: 15px;
+ padding:0 0;
+ width:100%;
+ text-align:center;
+}
+.TopStoreList {
+margin:3px;
+}
+ .MidTabConBox {
+ width:370px;
+}
+ .SrhBox {
+ width: 500px;
+}
+.SrhMidFild {
+width: 68%;
+}
+ .SrhDropMenu {
+width:420px;
+}
+
+
+/*------------------------------14/08/2014----------Listing Page-------------------*/
+.SrhFildHead {
+width:180px;
+}
+.SrhCityHeadRow {
+width:135px;
+padding:0 10px;
+}
+.HeadSrhBox {
+margin: 17px 0 0;
+}
+.Logo.LogiInnerPage {
+width:100%;
+text-align:center;
+border-bottom:1px solid #ccc;
+}
+ .MidHeading h1 {
+ font-size:30px;
+}
+ .MidSubPageRow {
+ margin: auto;
+ width:580px;
+}
+
+
+/*------------------------------18/08/2014----------contact us Page-------------------*/
+
+.MidHeadContact h1 {
+ margin: auto;
+ width:580px;
+}
+.MidConBox {
+ margin: auto;
+ width:580px;
+}
+.ConctMidMap img {
+width:100%;
+}
+ .ContactFrmLeft {
+ float: left;
+ width:100%;
+}
+ .ContactFrmLRight {
+ float: right;
+ width:100%;
+}
+
+
+/*----------------------Add Business Page----------------------------*/
+.AddBusinessTab {
+width:580px;
+}
+.AddBusinessTab li {
+margin: 0 5px;
+}
+.AddBusinessTab li a {
+width: 180px;
+}
+.AddBusinessTab li a label.AddBusinTxtTab {
+font-size:20px;
+}
+.AddBusinessTab li a span.AddBusinIconTab {
+background-size:50px 50px;
+}
+ .JoinNowBoxIn {
+width:580px;
+margin:auto;
+}
+.JoinNowBoxIn p {
+font-size:25px;
+}
+ .AddBusiMidTxt {
+width:400px;
+}
+.AddBusiMidFrmRow {
+width:400px;
+}
+.AddBusiFild {
+margin: 0 0 15px;
+ padding: 0 2%;
+ width: 96%;
+}
+.AddBusiSeFild {
+width:100%;
+margin: 0 0 15px;
+}
+.AddBusiFrmSubmit {
+width:400px;
+}
+a.AddMoreLink {
+right:0;
+bottom: -10px;
+}
+ .AddBusiMidFild.AdverFild .AddBusiFild {
+margin: 0 0 15px;
+ padding: 0 2%;
+ width: 96%;
+}
+ .AddBusiMidFild.AdverFild .AddBusiSeFild {
+width:100%;
+margin: 0 0 15px;
+}
+
+
+
+/*----------------------Advertise Page----------------------------*/
+
+.AddBusiMid.AdvertiseMiddBox .AddBusiMidTxt {
+ width:500px;
+}
+ .AddBusiMid.AdvertiseMiddBox .AddBusiMidFrmRow {
+ width:500px;
+}
+ .AddBusiMid.AdvertiseMiddBox .AddBusiFrmSubmit {
+ width:500px;
+}
+ .AdverListIn {
+ width:500px;
+}
+ .AdverListRow {
+ float: none;
+ margin: 0 auto;
+ width:300px;
+}
+ .AdverListImg {
+margin-top:25px;
+}
+ .AdverListTxt {
+margin-bottom:25px;
+}
+
+
+
+/*-----------------------------20/08/2014------------------------*/
+.HeadSrhBox.HeadSrhRow .SrhDropMenu {
+width:350px;
+}
+ .AddCityFild {
+width:98%;
+}
+
+
+
+
+
+/*----------------------Add Business Page----------------------------*/
+
+.AbtMidSliderIn p img {
+ padding: 10px 0 0;
+ width:100%;
+}
+ .AbtMidLiRow {
+ float: none;
+ margin:20px auto;
+ width: 300px;
+ border-bottom:1px solid #ccc;
+ padding:15px 0;
+}
+ .AbtTxtMidRight {
+ float: right;
+ margin: 5px 0;
+ width: 100%;
+}
+ .AbtTxtMidLeft {
+ margin: 5px 0;
+ width: 100%;
+}
+ .AbtMidFrmRow {
+ width: 500px;
+}
+ .AbtImgTxtLiRow {
+ margin: 5px;
+}
+.AbtMidFrmIn {
+width:580px;
+margin:auto;
+}
+.AbtSocialMid {
+width:580px;
+margin:auto;
+}
+.AbtImgTxtListIn {
+width:580px;
+margin:auto;
+}
+.AbtTxtMidIn {
+width:580px;
+margin:auto;
+}
+.AbtMidListIn {
+width:580px;
+margin:auto;
+}
+.AbtMidBoxIn {
+width:580px;
+margin:auto;
+padding:25px 0;
+}
+.AbtMidSliderIn {
+width:580px;
+margin:auto;
+padding:20px 0;
+}
+.AboutMidBanIn {
+width:580px;
+margin:auto;
+padding:20px 0;
+}
+.UserTxtAbt h1 {
+font-size:35px;
+font-weight:400;
+text-align:center;
+color:#fff;
+}
+.UserTxtAbt p {
+font-size:18px;
+padding:10px 0;
+font-weight:400;
+text-align:center;
+color:#fff;
+}
+.AbtMidSliderIn h2 {
+font-size:25px;
+font-weight:700;
+text-align:center;
+color:#009900;
+padding:5px 0;
+}
+.AbtMidSliderIn p {
+font-size:15px;
+font-weight:400;
+text-align:center;
+color:#3b3b3b;
+padding:10px 0;
+line-height:32px;
+}
+.AbtMidBoxIn h2 {
+font-size:35px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:20px 0 10px;
+}
+.AbtMidBoxIn p {
+font-size:15px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:15px 0;
+line-height:32px;
+}
+.AbtMidBoxIn p span {
+font-size:17px;
+font-weight:400;
+text-align:center;
+color:#fff;
+line-height:32px;
+}
+.AbtMidLTxt h2 {
+font-size:20px;
+color:#3b3b3b;
+font-weight:700;
+text-align:center;
+padding:10px 0;
+}
+.AbtMidLTxt p {
+font-size:15px;
+color:#3b3b3b;
+font-weight:400;
+text-align:center;
+padding:0 0;
+line-height:25px;
+}
+.AbtTxtMidLeft p {
+width:100%;
+float:left;
+padding:10px 0;
+font-size:16px;
+color:#fff;
+font-weight:400;
+line-height:32px;
+text-align:justify;
+}
+.AbtTxtMidLeft p label {
+padding:0 0;
+font-size:15px;
+color:#fff;
+font-weight:400;
+line-height:104px;
+}
+.AbtTxtMidRight p {
+width:100%;
+float:left;
+padding:10px 0;
+font-size:16px;
+color:#fff;
+font-weight:400;
+line-height:32px;
+text-align:justify;
+}
+.AbtTxtMidRight p label {
+padding:0 0;
+font-size:15px;
+color:#fff;
+font-weight:400;
+line-height:104px;
+}
+.AbtImgTxtListIn h2 {
+font-size:25px;
+font-weight:700;
+color:#009900;
+padding:10px 0;
+text-align:center;
+}
+.AbtImgTxtListIn p {
+font-size:15px;
+font-weight:400;
+color:#3b3b3b;
+padding:0 0;
+text-align:center;
+line-height:32px;
+}
+.AbtTxtLiRow h3 {
+padding:5px 0;
+text-align:center;
+font-size:18px;
+font-weight:700;
+color:#fff;
+}
+.AbtTxtLiRow p {
+padding:0px 0;
+text-align:center;
+font-size:14px;
+font-weight:400;
+color:#fff;
+line-height:16px;
+}
+.AbtSocialMid h2 {
+font-size:35px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:10px 0;
+}
+.AbtSocialMid p {
+padding:10px 0;
+text-align:center;
+font-size:16px;
+font-weight:400;
+color:#fff;
+line-height:32px;
+}
+.AbtMidFrmIn h2 {
+font-size:25px;
+color:#009900;
+padding:10px 0;
+text-align:center;
+}
+
+
+
+
+
+
+
+/*--------------Dashbord page------------------*/
+
+
+.DashBordMidIn {
+ margin: auto;
+ width:580px;
+}
+ .LeftDashBord {
+ float: left;
+ width: 100%;
+}
+ .DashMidLTxt {
+ float: left;
+ width: 395px;
+}
+ .RightDashBord {
+ float: right;
+ margin: 20px 0 0;
+ width: 100%;
+}
+ .DashMidLimg {
+ float: left;
+ padding: 10px 20px;
+ text-align: center;
+ width: 77px;
+}
+ .DashMidLTxt {
+ float: left;
+ margin: 15px 0 0;
+ width: 410px;
+}
+ .DashLiTopleft {
+ float: left;
+ padding: 0 0 15px;
+ width: 260px;
+}
+ .DashLiTopRight {
+ float: right;
+}
+ .DashLiTxtBotm {
+ float: left;
+ padding: 15px 0 0;
+ width: 100%;
+}
+.ListCmtIcon li {
+padding:0 18px;
+}
+.DashMidLiRow {
+width:94%;
+padding:0 3%;
+}
+ .DashLiTopleft h3 {
+font-size: 16px;
+}
+
+/*--------------Detail page------------------*/
+.Container {
+width:580px;
+margin:auto;
+}
+ .GrayDeLeft {
+ width: 100%;
+ text-align:center;
+}
+ .GrayDeLeft h2 {
+ font-size: 25px;
+}
+ .GrayDeRight {
+ width: 100%;
+}
+ .TabRatingLeft {
+width:100%;
+}
+ .PhotoListRi {
+width:100%;
+margin:0 0 15px;
+}
+.PhotoListRiMid li {
+margin: 0 15px;
+}
+ .DetailLeft {
+ width: 100%;
+}
+ .HighlightsLeft {
+ float: left;
+ width: 100%;
+}
+.FirstUserBy {
+margin: 15px 0 0;
+ width: 100%;
+}
+ .UserDetailLeft {
+ float: left;
+ width: 100%;
+}
+.BudgetBox {
+width:49%;
+}
+.OpeningHours {
+width:49%;
+}
+ .LocationMap {
+ float: right;
+ padding: 12px 0;
+ width: 100%;
+}
+ .AddPhotoRew {
+ float: left;
+ width: 100%;
+ margin-bottom:15px;
+}
+ .FacebookShare {
+ float: left;
+ width:50%;
+}
+ .UserRevLimg {
+ float: left;
+ margin: 0 0 10px;
+ padding: 12px 0 0;
+ text-align: center;
+ width: 100%;
+}
+ .UserRevLiTxt {
+margin: 0 2%;
+ padding: 10px 3%;
+ width: 90%;
+}
+ .RightBannerOut {
+ float: left;
+ padding: 10px 0 0;
+ position: relative;
+ right: 0;
+ text-align: center;
+ top: 0;
+ width: 100%;
+}
+.DetailRight {
+width:100%;
+}
+.RightBanAd {
+width:100%;
+text-align:center;
+}
+
+/*------------------------------05/09/2014----------Store List Page-------------------*/
+
+.StoreListLeft {
+ float: left;
+ width: 100%;
+}
+.TypeStoreLeftLi li label {
+width:95%;
+}
+.FeaListLeftSe li label {
+width:95%;
+}
+ .StoreListRight {
+ border-left: 0 solid #d9d9cd;
+ float: right;
+ width: 100%;
+}
+ .RightListBox {
+ float: right;
+ width: 100%;
+}
+.StoreListRow {
+margin: 5px 2%;
+ width: 96%;
+}
+.OpenposList li span.OpenposLiLeft {
+width: 60%;
+}
+.OpenposList li label.OpenposLiRight {
+ width: 30%;
+}
+ .PrivacyMidBox p {
+font-size:15px;
+line-height:22px;
+}
+.PrivacyMidBox h3 {
+font-size:20px;
+}
+.PrivacyMidBox ul {
+padding:5px 0;
+margin:0 0 0 15px;
+}
+.PrivacyMidBox ul li {
+padding:6px 0 6px 0px;
+font-size:15px;
+line-height:22px;
+}
+
+
+
+/*--------------Profile-page page------------------*/
+
+.ProfTxtRi {
+ float: right;
+ width: 100%;
+ text-align: center;
+}
+ .ProfTxtRiTpLe {
+ float: left;
+ width: 100%;
+}
+.ProfTxtRiLi {
+width:100%;
+}
+.ProfTxtRiLi li {
+width:30%;
+}
+.ProfileRating li a span {
+width: 15px;
+}
+.ProfImgLeft {
+width:100%;
+text-align:center;
+}
+ .ProfMidLeft {
+ float: left;
+ width: 100%;
+}
+ .ProfMidLeft .UserRevLiTxt {
+ margin: 0 2%;
+ padding: 10px 3%;
+ width: 90%;
+}
+ .UserProLi {
+ float: left;
+ width: 100%;
+}
+ .ProfMidRight {
+ float: right;
+ padding: 12px 0;
+ width: 100%;
+}
+.RecViewList {
+width:100%;
+}
+
+
+
+/*----------------------Profile Network page------------------10-09-2014-----------*/
+.FollowLiTxt p {
+font-size:12px;
+}
+ .TabRewLeft.TabRewLeRew {
+width: 325px;
+}
+.TabRewLeft.TabRewLeRew li {
+padding: 0 20px 0 0;
+}
+
+/*----------------------Wishlist page------------------10-09-2014-----------*/
+.FollowLiTxt p a.AddWishlistBtn.RemoveListBtn {
+padding: 0 5px;
+font-size: 12px;
+}
+
+
+/*----------------------Claim listing page------------------10-09-2014-----------*/
+.AddBusiMidFild.AdverFild .AddBusiFild.ClamListFild {
+ margin-top: 18px;
+ width: 96%;;
+}
+ .ClamLiHeadLeft {
+ float: left;
+ padding: 0;
+ text-align: center;
+ width: 100%;
+}
+ .ClamLiHeadRight {
+ float: right;
+ padding: 15px 0 0;
+ width: 100%;
+}
+a.AnGreenBtn {
+padding:0;
+width:100%;
+text-align:center;
+}
+ .ClamListRow {
+ float: left;
+ margin: 10px 3%;
+ padding: 12px 2%;
+ position: relative;
+ width: 90%;
+}
+
+
+/*----------------------Stats page------------------10-09-2014-----------*/
+.StatMidTp .ProfileRating li a span {
+ width: 19px;
+}
+.StatMBLeft {
+width: 390px;
+}
+
+/*-------------------------22-09-2014-------------------*/
+.AddCityFild.EditBirthSeFild {
+width:28%;
+margin: 0 15px 0 0;
+}
+.TabMenuMid li {
+width: 49%;
+border-top: 1px solid #ddd;
+}
+.TabMenuMid li a {
+font-size: 15px;
+}
+
+.EditProfFrm li {
+    width: 96%;
+}
+
+
+
+.LogWithIn li img{
+width: 180px;
+}
+.LogWithIn li {
+padding: 0 0 0 5px;
+}
+
+
+
+
+
+.ImgDetMidWrp {
+width:550px;
+display:block;
+}
+.ImgDeLeft {
+width:98%;
+padding: 8px 1%;
+}
+.ImgDeRight {
+width:100%;
+-moz-border-radius:0 0 6px 6px;
+	-webkit-border-radius:0 0 6px 6px;
+	-khtml-border-radius:0 0 6px 6px;
+	border-radius:0 0 6px 6px;
+}
+
+
+.TabMenuMid li.FindFriTab {
+width:100%;
+}
+
+
+.InviteFriSrh .EditProfFrm.SetPassword li .EditProfFild {
+    max-width: 370px;
+    padding: 0 2%;
+}
+
+
+
+/***************************25-09-2014*************************/
+.DashBanTxt h1 {
+font-size: 38px;
+}
+.DashBanTxt p span {
+font-size: 25px;
+}
+
+.DashTxtInLeft {
+    float: left;
+    width: 300px;
+}
+.DashBanImg {
+width:100%;
+text-align:center;
+}
+.DashBanImg img {
+display:initial;
+}
+a.ChangepicIc {
+    bottom: 10px;
+    left: 268px;
+    position: absolute;
+}
+
+.DashBanTxt {
+    margin: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+.DashTxtInRig {
+width: 175px;
+}
+
+/*----------Blog Css----------*/
+
+.BlogTopBg {
+background-position:-110px 0;
+}
+h1.BlogHeading {
+font-size:50px;
+}
+
+.BlogListMid {
+width:500px;
+}
+.BlogListRow {
+width:460px;
+}
+.BlogLiTxtTop h2 {
+font-size:32px;
+}
+.PostUserBlog {
+width: 285px;
+}
+
+
+.AddBusiMidBotm.AdddBusinessForm .AddFrmBoxRowBusiness li {
+width:100%;
+}
+.AddBusiMidFild.AdverFild .AddFrmBoxRow li {
+width:100%;
+}
+
+
+
+.eidtBusiness .EditProfFrmb li label.FrmLabelTxt {
+width:100%;
+}
+
+
+.MidTabConBox.eidtBusiness div.error-message {
+    float: right;
+    width: 97%;
+}
+
+
+.MidTabConBox.EditProfilebOwner .EditProfFild {
+    width: 92%;
+}
+
+
+.DashBordTabLe.SettingTabDash li ul.TabSubMenu {
+width: 580px;
+}
+
+/*-------------------------02-12-2014-------------------*/
+.StepTabReview .TabMenuMid li.FindFriTab {
+    width: 32%;
+}
+.StepTabReview .TabMenuMid li {
+    border-top:0px solid #ddd;
+    width: 32%;
+}
+.StepTabReview .TabMenuMid li a {
+font-size: 13px;
+}
+
+.StepTabReview .TabMenuMid li ul.DateDropMenu li {
+    border-top: 0 solid #ddd;
+    width:100%;
+}
+
+
+
+
+.SrhBoxIn.HeaderSrhBox {
+width: 388px;
+}
+
+}
+ @media all and (min-width:480px) and (max-width:599px) {
+ .HeadIn {
+ width:450px;
+}
+.SliderBoxIn {
+ width: 450px;
+}
+ .MidTxtImgList {
+ padding: 0 0 24px;
+ width:450px;
+}
+.MidTxtImgLiRow {
+ margin: 12px;
+ position: relative;
+ width: 260px;
+}
+.MidTxtImgLiRow img {
+ width: 100%;
+}
+ .MidTxtImgList h2 {
+ font-size:25px;
+ padding: 30px 0 20px;
+}
+ .FtrLeft p a {
+ color: #838383;
+ padding: 0 5px 0 0;
+}
+.MidTxtLi p {
+ font-size: 20px;
+ padding: 94px 0 0;
+}
+.NaviMidBox {
+ width: 450px;
+}
+/*.NaviMidList {
+   width: 182px;
+     margin: 0 30px;
+}*/
+/*.NaviMidList a span.NaviMidIcon {
+width:166px;
+height:166px;
+background-size:50% !important;
+}*/
+
+.NaviMidList {
+ float: none;
+ margin: auto;
+ width: 280px;
+}
+ .NaviMidList a {
+ float: left;
+ margin: 15px 0;
+ width: 100%;
+}
+ .MidConnect {
+ background:url(../../img/images_eng/mid-bg-2.jpg) repeat-y center top;
+ width:100%;
+ height:auto;
+ border-top:1px dashed #cda760;
+ margin:-1px 0 0 0;
+ padding:0 0 15px 0;
+}
+ .MidLogo {
+ padding: 0 0 15px;
+}
+ .NaviMidList a label {
+ font-size: 25px;
+}
+ .AppMidBox {
+ width: 450px;
+}
+ .AppMidImgLeft {
+ float: none;
+ margin: auto;
+ width: 350px;
+}
+.AppMidImgLeft img {
+width:100%;
+}
+ .AppMidTxtRi h2 {
+ font-size: 40px;
+}
+ .AppMidBoxRi {
+ float: right;
+ margin: 20px 0 0;
+ width: 100%;
+ text-align: center;
+}
+ .AppVideo {
+ padding: 10px 0;
+ text-align: center;
+ width: 100%;
+}
+.FoterIn {
+ margin: auto;
+ width: 450px;
+}
+ .FtrLeft {
+ float: left;
+ text-align: center;
+ width: 100%;
+}
+ .FtrRight {
+ float: none;
+ margin: auto;
+ padding: 0;
+ width: 215px;
+}
+ .FtrRiTop {
+ float: left;
+ margin: 15px 0 0;
+ width: 100%;
+}
+ .Navigation {
+background:url(../../img/images_eng/nav_icon.png) no-repeat;
+width:40px;
+float:left;
+height:50px;
+position:relative;
+ margin: 21px 27px 0 0;
+}
+.Navi {
+position:absolute;
+width:300px;
+right:0;
+top:30px;
+background:#fff;
+}
+.Navi li {
+width:96%;
+float:left;
+margin:2px 1.2%;
+padding:0;
+}
+.Navi li a {
+width:100%;
+padding:0;
+text-align:center;
+}
+.Navigation:hover .Navi {
+display:block;
+}
+ .SliderBoxIn h2 {
+ color: #fff;
+ font-size: 30px;
+}
+ .SliderBoxIn h1 {
+ font-size: 40px;
+}
+ .MidConnectBotm p {
+ color: #fff;
+}
+ .SrhBox {
+ margin: auto;
+ padding: 84px 0 0;
+ width: 400px;
+}
+ .MidTxtImgLi {
+ float: none;
+ margin: auto;
+ width: 282px;
+}
+.SrhMidFild {
+width:76%;
+padding:0 12%;
+}
+
+
+/*---------------Login-----------------*/
+
+
+.PopWrp {
+ margin: auto;
+ width:320px;
+}
+ .PopMidTop img {
+ padding: 6px 10px;
+}
+ .LogFrmBox {
+ margin: auto;
+ width: 270px;
+}
+ .LoginFrm li {
+ padding:6px 10px;
+}
+ .RemBoxLeft {
+ float: left;
+ padding: 0 10px;
+ width: auto;
+}
+ .ForgotBoxRi {
+ float: left;
+ padding: 0 10px;
+ width: auto;
+}
+.LogTxtRowRi {
+ border-top: 1px solid #dddddd;
+ margin: 24px 0 0;
+ padding: 8px 20px;
+}
+ .MidTabNaviBox {
+ width:450px;
+}
+.MidTabBoxTop {
+height:auto;
+}
+ .MidTabNavi li {
+width:31%;
+border-bottom:1px solid #292927;
+}
+ .MidTabNavi li.Last {
+ border-right:1px solid #292927;
+}
+.MidTabNavi li a {
+ font-size: 15px;
+ padding:0 0;
+ width:100%;
+ text-align:center;
+}
+.TopStoreList {
+margin:3px;
+}
+ .MidTabConBox {
+ width:370px;
+}
+ .SrhBox {
+ width:400px;
+}
+.SrhMidFild {
+width:56%;
+}
+ .SrhDropMenu {
+width:320px;
+}
+
+
+
+
+
+
+/*------------------------------14/08/2014----------Listing Page-------------------*/
+.SrhFildHead {
+width:110px;
+}
+.SrhCityHeadRow {
+width:80px;
+padding:0 6px;
+}
+.HeadSrhBox {
+margin: 17px 0 0;
+}
+.Logo.LogiInnerPage {
+width:100%;
+text-align:center;
+border-bottom:1px solid #ccc;
+}
+ .MidHeading h1 {
+ font-size: 25px;
+}
+ .MidSubPageRow {
+ margin: auto;
+ width:450px;
+}
+
+
+/*------------------------------18/08/2014----------contact us Page-------------------*/
+
+.MidHeadContact h1 {
+ margin: auto;
+ width:450px;
+  font-size: 25px;
+}
+.MidConBox {
+ margin: auto;
+ width:450px;
+}
+.ConctMidMap img {
+width:100%;
+}
+ .ContactFrmLeft {
+ float: left;
+ width:100%;
+ margin:0 0 15px 0;
+}
+ .ContactFrmLRight {
+ float: right;
+ width:100%;
+}
+.CntBtnFild {
+width:100%;
+padding:0;
+}
+
+
+/*----------------------Add Business Page----------------------------*/
+.AddBusinessTab {
+width:450px;
+}
+.AddBusinessTab li {
+margin: 0 5px;
+}
+.AddBusinessTab li a {
+width:135px;
+height:120px;
+}
+.AddBusinessTab li a label.AddBusinTxtTab {
+font-size:17px;
+}
+.AddBusinessTab li a span.AddBusinIconTab {
+background-size:40px 40px;
+margin:15px 0;
+height:50px;
+}
+.AddBusinessTabBg {
+height: 205px;
+}
+ .JoinNowBoxIn {
+width:450px;
+margin:auto;
+}
+.JoinNowBoxIn p {
+font-size:18px;
+}
+ .AddBusiMidTxt {
+width:400px;
+}
+.AddBusiMidFrmRow {
+width:400px;
+}
+.AddBusiFild {
+margin: 0 0 15px;
+ padding: 0 2%;
+ width: 96%;
+}
+.AddBusiSeFild {
+width:100%;
+margin: 0 0 15px;
+}
+.AddBusiFrmSubmit {
+width:400px;
+}
+a.AddMoreLink {
+right:0;
+bottom: -10px;
+}
+ .AddBusiMidTop p {
+font-size:20px;
+}
+ .AddBusiMidFild.AdverFild .AddBusiFild {
+margin: 0 0 15px;
+ padding: 0 2%;
+ width: 96%;
+}
+ .AddBusiMidFild.AdverFild .AddBusiSeFild {
+width:100%;
+margin: 0 0 15px;
+}
+
+/*----------------------Advertise Page----------------------------*/
+
+.AddBusiMid.AdvertiseMiddBox .AddBusiMidTxt {
+ width:400px;
+}
+ .AddBusiMid.AdvertiseMiddBox .AddBusiMidFrmRow {
+ width:400px;
+}
+ .AddBusiMid.AdvertiseMiddBox .AddBusiFrmSubmit {
+ width:400px;
+}
+ .AdverListIn {
+ width:400px;
+}
+ .AdverListRow {
+ float: none;
+ margin: 0 auto;
+ width:300px;
+}
+ .AdverListImg {
+margin-top:25px;
+}
+ .AdverListTxt {
+margin-bottom:25px;
+}
+ .AdverListIn h2 {
+font-size:23px;
+}
+.AdverListTxt h3 {
+font-size:20px;
+}
+/*-----------------------------20/08/2014------------------------*/
+.HeadSrhBox.HeadSrhRow .SrhDropMenu {
+width:300px;
+}
+ .AddCityFild {
+width:98%;
+}
+
+
+
+/*----------------------Add Business Page----------------------------*/
+
+.AbtMidSliderIn p img {
+ padding: 10px 0 0;
+ width:100%;
+}
+ .AbtMidLiRow {
+ float: none;
+ margin:20px auto;
+ width: 300px;
+ border-bottom:1px solid #ccc;
+ padding:15px 0;
+}
+ .AbtTxtMidRight {
+ float: right;
+ margin: 5px 0;
+ width: 100%;
+}
+ .AbtTxtMidLeft {
+ margin: 5px 0;
+ width: 100%;
+}
+ .AbtMidFrmRow {
+ width:400px;
+}
+ .AbtImgTxtLiRow {
+ margin: 23px;
+}
+.AbtMidFrmIn {
+width:450px;
+margin:auto;
+}
+.AbtSocialMid {
+width:450px;
+margin:auto;
+}
+.AbtImgTxtListIn {
+width:450px;
+margin:auto;
+}
+.AbtTxtMidIn {
+width:450px;
+margin:auto;
+}
+.AbtMidListIn {
+width:450px;
+margin:auto;
+}
+.AbtMidBoxIn {
+width:450px;
+margin:auto;
+padding:25px 0;
+}
+.AbtMidSliderIn {
+width:450px;
+margin:auto;
+padding:20px 0;
+}
+.AboutMidBanIn {
+width:450px;
+margin:auto;
+padding:20px 0;
+}
+.UserTxtAbt h1 {
+font-size:30px;
+font-weight:400;
+text-align:center;
+color:#fff;
+}
+.UserTxtAbt p {
+font-size:17px;
+padding:10px 0;
+font-weight:400;
+text-align:center;
+color:#fff;
+}
+.AbtMidSliderIn h2 {
+font-size:23px;
+font-weight:700;
+text-align:center;
+color:#009900;
+padding:5px 0;
+}
+.AbtMidSliderIn p {
+font-size:15px;
+font-weight:400;
+text-align:center;
+color:#3b3b3b;
+padding:10px 0;
+line-height:32px;
+}
+.AbtMidBoxIn h2 {
+font-size:30px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:20px 0 10px;
+}
+.AbtMidBoxIn p {
+font-size:15px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:15px 0;
+line-height:32px;
+}
+.AbtMidBoxIn p span {
+font-size:16px;
+font-weight:400;
+text-align:center;
+color:#fff;
+line-height:32px;
+}
+.AbtMidLTxt h2 {
+font-size:18px;
+color:#3b3b3b;
+font-weight:700;
+text-align:center;
+padding:10px 0;
+}
+.AbtMidLTxt p {
+font-size:15px;
+color:#3b3b3b;
+font-weight:400;
+text-align:center;
+padding:0 0;
+line-height:25px;
+}
+.AbtTxtMidLeft p {
+width:100%;
+float:left;
+padding:10px 0;
+font-size:15px;
+color:#fff;
+font-weight:400;
+line-height:32px;
+text-align:justify;
+}
+.AbtTxtMidLeft p label {
+padding:0 0;
+font-size:15px;
+color:#fff;
+font-weight:400;
+line-height:104px;
+}
+.AbtTxtMidRight p {
+width:100%;
+float:left;
+padding:10px 0;
+font-size:15px;
+color:#fff;
+font-weight:400;
+line-height:32px;
+text-align:justify;
+}
+.AbtTxtMidRight p label {
+padding:0 0;
+font-size:15px;
+color:#fff;
+font-weight:400;
+line-height:104px;
+}
+.AbtImgTxtListIn h2 {
+font-size:23px;
+font-weight:700;
+color:#009900;
+padding:10px 0;
+text-align:center;
+}
+.AbtImgTxtListIn p {
+font-size:15px;
+font-weight:400;
+color:#3b3b3b;
+padding:0 0;
+text-align:center;
+line-height:32px;
+}
+.AbtTxtLiRow h3 {
+padding:5px 0;
+text-align:center;
+font-size:17px;
+font-weight:700;
+color:#fff;
+}
+.AbtTxtLiRow p {
+padding:0px 0;
+text-align:center;
+font-size:14px;
+font-weight:400;
+color:#fff;
+line-height:16px;
+}
+.AbtSocialMid h2 {
+font-size:30px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:10px 0;
+}
+.AbtSocialMid p {
+padding:10px 0;
+text-align:center;
+font-size:15px;
+font-weight:400;
+color:#fff;
+line-height:32px;
+}
+.AbtMidFrmIn h2 {
+font-size:23px;
+color:#009900;
+padding:10px 0;
+text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------Dashbord page------------------*/
+
+
+.DashBordMidIn {
+ margin: auto;
+ width:450px;
+}
+ .LeftDashBord {
+ float: left;
+ width: 100%;
+}
+ .DashMidLTxt {
+ float: left;
+ width: 100%;
+}
+ .RightDashBord {
+ float: right;
+ margin: 20px 0 0;
+ width: 100%;
+}
+ .DashMidLimg {
+ float: left;
+ padding: 10px 0;
+ text-align: center;
+ width: 100%;
+}
+ .DashMidLTxt {
+ float: left;
+ margin: 15px 0 0;
+ width: 100%;
+}
+ .DashLiTopleft {
+ float: left;
+ padding: 0 0 15px;
+ width: 100%;
+ text-align:center;
+}
+ .DashLiTopRight {
+ float: none;
+ margin:auto;
+ width:180px;
+}
+ .DashLiTxtBotm {
+ float: left;
+ padding: 15px 0 0;
+ width: 100%;
+}
+.ListCmtIcon li {
+padding:0 18px;
+}
+.DashMidLiRow {
+width:94%;
+padding:0 3%;
+}
+ .DashLiTopleft h3 {
+font-size: 16px;
+}
+ .DashMidList h2 {
+font-size:21px;
+}
+.ShopFollowRow h2 {
+font-size:21px;
+}
+
+/*--------------Detail page------------------*/
+.Container {
+width:450px;
+margin:auto;
+}
+ .GrayDeLeft {
+ width: 100%;
+ text-align:center;
+}
+ .GrayDeLeft h2 {
+ font-size:25px;
+}
+.GrayDeLeft h2 a {
+width:100%;
+float:left;
+}
+ .GrayDeRight {
+ width: 100%;
+}
+ .GrayDeRight {
+ width: 100%;
+}
+ .TabRatingLeft {
+width:100%;
+}
+ .PhotoListRi {
+width:100%;
+margin:0 0 15px;
+}
+.PhotoListRiMid li {
+ margin: 0 4px;
+ width: 81px;
+}
+.MidTabRow li a {
+font-size: 13px;
+padding: 0 15px;
+}
+.ProdLikeNumRi li {
+font-size: 13px;
+padding: 0 0 0 5px;
+}
+.ProdLikeNumRi li span {
+font-size:14px;
+}
+.TabProdLeft li {
+padding: 12px 10px;
+}
+.TabProdLeft li a {
+background:none !important;
+padding:0 !important;
+}
+.TabProdLeft li:hover a, .TabProdLeft li.Select a {
+background:none !important;
+padding:0 !important;
+}
+ .DetailLeft {
+ width: 100%;
+}
+ .HighlightsLeft {
+ float: left;
+ width: 100%;
+}
+.FirstUserBy {
+margin: 15px 0 0;
+ width: 100%;
+}
+ .UserDetailLeft {
+ float: left;
+ width: 100%;
+}
+.BudgetBox {
+width:49%;
+}
+.OpeningHours {
+width:49%;
+}
+ .LocationMap {
+ float: right;
+ padding: 12px 0;
+ width: 100%;
+}
+ .AddPhotoRew {
+ float: left;
+ width: 100%;
+ margin-bottom:15px;
+}
+ .FacebookShare {
+ float: left;
+ width:50%;
+}
+ .UserRevLimg {
+ float: left;
+ margin: 0 0 10px;
+ padding: 12px 0 0;
+ text-align: center;
+ width: 100%;
+}
+ .UserRevLiTxt {
+margin: 0 2%;
+ padding: 10px 3%;
+ width: 90%;
+}
+.TabRewLeft {
+width: auto;
+}
+.TabRewLeft li {
+padding: 0 20px 0 0;
+}
+ .RightBannerOut {
+ float: left;
+ padding: 10px 0 0;
+ position: relative;
+ right: 0;
+ text-align: center;
+ top: 0;
+ width: 100%;
+}
+.DetailRight {
+width:100%;
+}
+.RightBanAd {
+width:100%;
+text-align:center;
+}
+/*------------------------------05/09/2014----------Store List Page-------------------*/
+
+.StoreListLeft {
+ float: left;
+ width: 100%;
+}
+.TypeStoreLeftLi li label {
+width:93%;
+}
+.FeaListLeftSe li label {
+width:93%;
+}
+ .StoreListRight {
+ border-left: 0 solid #d9d9cd;
+ float: right;
+ width: 100%;
+}
+ .RightListBox {
+ float: right;
+ width: 100%;
+}
+.StoreListRow {
+margin: 5px 2%;
+ width: 96%;
+}
+.StoreListTab li a {
+padding: 0 12px;
+font-size: 16px;
+}
+.StoreListTabM li a {
+ padding: 0 11px 8px;
+}
+ .StoreListTxt {
+ float: left;
+ width: 215px;
+}
+ .OpenposList li span.OpenposLiLeft {
+width: 60%;
+}
+.OpenposList li label.OpenposLiRight {
+ width: 30%;
+}
+ .PrivacyMidBox p {
+font-size:14px;
+line-height:20px;
+}
+.PrivacyMidBox h3 {
+font-size:18px;
+}
+.PrivacyMidBox ul {
+padding:5px 0;
+margin:0 0 0 15px;
+}
+.PrivacyMidBox ul li {
+padding:6px 0 6px 0px;
+font-size:14px;
+line-height:20px;
+}
+
+
+
+/*--------------Profile-page page------------------*/
+
+.ProfTxtRi {
+ float: right;
+ width: 100%;
+ text-align: center;
+}
+ .ProfTxtRiTpLe {
+ float: left;
+ width: 100%;
+}
+.ProfTxtRiLi {
+width:100%;
+}
+.ProfTxtRiLi li {
+width:32%;
+}
+.ProfileRating li a span {
+width: 18px;
+}
+.ProfImgLeft {
+width:100%;
+text-align:center;
+}
+ .ProfTxtRiBLe {
+ float: left;
+ text-align: center;
+ width: 100%;
+}
+.ProfileTabMenu li a {
+padding: 0 22px;
+font-size: 14px;
+text-transform: none;
+}
+ .ProfMidLeft {
+ float: left;
+ width: 100%;
+}
+ .ProfMidLeft .UserRevLiTxt {
+ margin: 0 2%;
+ padding: 10px 3%;
+ width: 90%;
+}
+ .UserProLi {
+ float: left;
+ width: 100%;
+ padding:10px 0;
+}
+ .UserProfLiRow.BdrTopBox {
+ border-top:0px solid #eeeee6;
+ padding:0;
+}
+ .ProfMidRight {
+ float: right;
+ padding: 12px 0;
+ width: 100%;
+}
+.RecViewList {
+width:100%;
+}
+
+
+/*----------------------Profile Network page------------------10-09-2014-----------*/
+.FollowListRow {
+width: 96%;
+}
+.FollowListRow.BdrRight {
+background:none;
+}
+ .TabRewLeft.TabRewLeRew li {
+padding: 0 10px 0 0;
+}
+.TabRewRight li {
+padding: 0 10px 0 0;
+}
+
+
+/*----------------------Claim listing page------------------10-09-2014-----------*/
+.AddBusiMidFild.AdverFild .AddBusiFild.ClamListFild {
+ margin-top: 18px;
+ width: 96%;;
+}
+ .ClamLiHeadLeft {
+ float: left;
+ padding: 0;
+ text-align: center;
+ width: 100%;
+}
+ .ClamLiHeadRight {
+ float: right;
+ padding: 15px 0 0;
+ width: 100%;
+}
+a.AnGreenBtn {
+padding:0;
+width:100%;
+text-align:center;
+}
+ .ClamListRow {
+ float: left;
+ margin: 10px 3%;
+ padding: 12px 3%;
+ position: relative;
+ width:88%;
+}
+ .ClamListLeft {
+ float: left;
+ width: 100%;
+}
+ .ClamListRight {
+ float: right;
+ padding: 15px 0 0;
+ width: 100%;
+}
+a.ClaimResBtn {
+padding:0;
+width:100%;
+text-align:center;
+}
+ .ClaimFrmList {
+top: 148px;
+}
+ .ClaimFrmArrow {
+ position: absolute;
+ right: 0;
+ text-align: center;
+ top: -12px;
+ width: 100%;
+}
+
+
+
+/*----------------------Stats page------------------10-09-2014-----------*/
+.StatMidTp .ProfileRating li a span {
+ width: 16px;
+}
+.StatMBLeft {
+ width: 100%;
+}
+.StatMBRight {
+width: 100%;
+}
+.StatMBRight li {
+width:46%;
+padding-left:3%;
+}
+ .StePntLiMid table td.MobilenoneTd {
+display:none !important;
+}
+
+/*-------------------------22-09-2014-------------------*/
+.AddCityFild.EditBirthSeFild {
+width:28%;
+margin: 0 6px 0 0;
+}
+.TabMenuMid li {
+width: 49%;
+border-top: 1px solid #ddd;
+}
+.TabMenuMid li a {
+font-size: 13px;
+}
+
+.EditProfFrm li {
+    width: 96%;
+}
+.SetHandleFild {
+width: 55%;
+}
+
+.HandleFrmRi {
+    float: left;
+    margin: 15px 0 0;
+    width: 100%;
+}
+.SaveBtnHandle {
+padding:0;
+width:98%;
+}
+
+
+
+
+.ChangeSetList table td {
+padding:23px 0 43px 30px;
+}
+.ChangeSetList table tr.GrayBgListTable {
+background:#f3f3f3;
+}
+.ChangeSetList #no-more-tables td:before {
+top: 21px;
+}
+.OnOffBox {
+margin: -6px 0 0;
+}
+
+
+
+
+.LogWithIn {
+padding: 0;
+    width: 100%;
+}
+.LogWithIn li {
+padding: 0 0 10px 0;
+    width: 100%;
+	text-align:center;
+}
+
+.DeleteAccTxt p {
+padding: 2px 15px;
+}
+
+.ListBtnBotm {
+    display: block;
+    padding: 0 15px 30px;
+}
+.SetPassMid {
+width:100%;
+}
+
+
+
+
+.ImgDetMidWrp {
+width:450px;
+display:block;
+}
+.ImgDeLeft {
+width:96%;
+ padding: 8px 2%;
+}
+.ImgDeRight {
+width:100%;
+-moz-border-radius:0 0 6px 6px;
+	-webkit-border-radius:0 0 6px 6px;
+	-khtml-border-radius:0 0 6px 6px;
+	border-radius:0 0 6px 6px;
+}
+.TabMenuMid li.FindFriTab {
+width:100%;
+}
+
+.InviteFriSrh {
+width: 100%;
+}
+
+
+.InviteFriSrh .EditProfFrm.SetPassword li .EditProfFild {
+    max-width: 95%;
+    padding: 0 2%;
+    width: 95%;
+}
+
+.InviteFriSrh .CntBtnFild {
+    margin: 15px 0 0;
+}
+
+
+/***************************25-09-2014*************************/
+.DashBanTxt h1 {
+font-size:32px;
+}
+.DashBanTxt p span {
+font-size: 20px;
+}
+.UserInfoBan li span.UserBirthBan {
+font-size:14px;
+}
+.UserInfoBan li span.UserLocBan {
+font-size:14px;
+}
+.UserInfoBan li span.UserCallBan {
+font-size:14px;
+}
+
+.DashTxtInLeft {
+    float: left;
+    width: 250px;
+}
+.DashBanImg {
+width:100%;
+text-align:center;
+}
+.DashBanImg img {
+display:initial;
+}
+a.ChangepicIc {
+    bottom: 10px;
+    left: 209px;
+    position: absolute;
+}
+
+.DashBanTxt {
+    margin: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+.DashTxtInRig {
+width: 175px;
+}
+
+
+/*----------Blog Css----------*/
+
+.BlogTopBg {
+background-position:-84px 0;
+min-height: 345px;
+}
+h1.BlogHeading {
+font-size:40px;
+}
+
+
+.BlogListMid {
+width:450px;
+}
+.BlogListRow {
+width:410px;
+}
+.BlogLiTxtTop h2 {
+font-size:25px;
+}
+.PostUserBlog {
+width: 238px;
+}
+
+
+
+
+.AddBusiMidBotm.AdddBusinessForm .AddFrmBoxRowBusiness li {
+width:100%;
+}
+
+
+.AddBusiMidFild.AdverFild .AddFrmBoxRow li {
+width:100%;
+}
+
+.ContactFrmLeft h2 {
+font-size: 25px;
+}
+
+
+
+
+
+.eidtBusiness .EditProfFrmb.FrmMidBox li .EditProfFild {
+    padding: 0 3%;
+    width: 89%;
+}
+.eidtBusiness .EditProfFrmb.FrmMidBox li Select.EditProfFild {
+    padding: 12px 3%;
+    width: 96%;
+}
+.eidtBusiness .EditProfFrmb.FrmMidBox li Select.EditProfFild.EditProfFildHour {
+    padding: 12px 15px;
+    width: 208px;
+}
+.eidtBusiness .CntBtnFild {
+    padding: 0;
+    width: 96%;
+}
+
+
+.MidTabConBox.eidtBusiness div.error-message {
+    float: right;
+    width: 97%;
+}
+
+.MidTabConBox.EditProfilebOwner .EditProfFild {
+    width: 92%;
+}
+
+
+.DashBordTabLe.SettingTabDash li ul.TabSubMenu {
+width: 450px;
+}
+
+/*-------------------------02-12-2014-------------------*/
+.StepTabReview .TabMenuMid li.FindFriTab {
+    width: 32%;
+}
+.StepTabReview .TabMenuMid li {
+    border-top:0px solid #ddd;
+    width: 32%;
+}
+.StepTabReview .TabMenuMid li a {
+font-size: 13px;
+text-transform:none;
+}
+
+.StepTabReview .TabMenuMid li ul.DateDropMenu li {
+    border-top: 0 solid #ddd;
+    width:100%;
+}
+
+
+
+.SrhBoxIn.HeaderSrhBox {
+width: 100%;
+ margin: 16px 0 0;
+}
+
+}
+ @media all and (max-width:479px) {
+ .HeadIn {
+ width:300px;
+}
+.SliderBoxIn {
+ width: 300px;
+}
+ .MidTxtImgList {
+ padding: 0 0 24px;
+ width:300px;
+}
+.MidTxtImgLiRow {
+ margin: 12px;
+ position: relative;
+ width: 260px;
+}
+.MidTxtImgLiRow img {
+ width: 100%;
+}
+ .MidTxtImgList h2 {
+ font-size:25px;
+ padding: 30px 0 20px;
+}
+ .FtrLeft p a {
+ color: #838383;
+ padding: 0 5px 0 0;
+}
+.MidTxtLi p {
+ font-size: 20px;
+ padding: 94px 0 0;
+}
+.NaviMidBox {
+ width: 300px;
+}
+/*.NaviMidList {
+   width: 182px;
+     margin: 0 30px;
+}*/
+.NaviMidList a span.NaviMidIcon {
+width:184px;
+height:184px;
+background-size:50% !important;
+}
+ .NaviMidList {
+ float: none;
+ margin: auto;
+ width:200px;
+}
+ .NaviMidList a {
+ float: left;
+ margin: 15px 0;
+ width: 100%;
+}
+ .MidConnect {
+ background:url(../../img/images_eng/mid-bg-2.jpg) repeat-y center top;
+ width:100%;
+ height:auto;
+ border-top:1px dashed #cda760;
+ margin:-1px 0 0 0;
+ padding:0 0 15px 0;
+}
+ .MidLogo {
+ padding: 0 0 15px;
+}
+ .NaviMidList a label {
+ font-size: 25px;
+}
+ .AppMidBox {
+ width: 300px;
+}
+ .AppMidImgLeft {
+ float: none;
+ margin: auto;
+ width:280px;
+}
+.AppMidImgLeft img {
+width:100%;
+}
+ .AppMidTxtRi h2 {
+ font-size: 30px;
+}
+ .AppMidBoxRi {
+ float: right;
+ margin: 20px 0 0;
+ width: 100%;
+ text-align: center;
+}
+ .AppVideo {
+ padding: 10px 0;
+ text-align: center;
+ width: 100%;
+}
+.FoterIn {
+ margin: auto;
+ width: 300px;
+}
+ .FtrLeft {
+ float: left;
+ text-align: center;
+ width: 100%;
+}
+ .FtrRight {
+ float: none;
+ margin: auto;
+ padding: 0;
+ width: 215px;
+}
+ .FtrRiTop {
+ float: left;
+ margin: 15px 0 0;
+ width: 100%;
+}
+ .Navigation {
+background:url(../../img/images_eng/nav_icon.png) no-repeat;
+width:40px;
+float:left;
+height:20px;
+position:relative;
+ margin: 21px 27px 0 0;
+}
+.Navi {
+position:absolute;
+width:300px;
+left:0;
+top:30px;
+background:#fff;
+}
+.Navi li {
+width:96%;
+float:left;
+margin:2px 1.2%;
+padding:0;
+}
+.Navi li a {
+width:100%;
+padding:0;
+text-align:center;
+}
+.Navigation:hover .Navi {
+display:block;
+}
+ .SliderBoxIn h2 {
+ color: #fff;
+ font-size: 30px;
+}
+ .SliderBoxIn h1 {
+ font-size: 40px;
+}
+ .MidConnectBotm p {
+ color: #fff;
+}
+ .SrhBox {
+ margin: auto;
+ padding: 84px 0 0;
+ width:280px;
+}
+ .MidTxtImgLi {
+ float: none;
+ margin: auto;
+ width: 282px;
+}
+.SrhMidFild {
+width:70%;
+padding:0 15%;
+}
+ .Logo {
+ float: left;
+ padding: 10px 0;
+ text-align: center;
+ width: 100%;
+}
+ .HeadRi {
+ float: right;
+ width: 100%;
+}
+ .AppVideo img {
+width:100%;
+}
+ .AppMidTxtRi p img {
+ padding: 0 0 14px;
+}
+
+
+
+/*---------------Login-----------------*/
+
+
+.PopWrp {
+ margin: auto;
+ width:300px;
+}
+ .PopMidTop img {
+ padding: 6px 10px;
+}
+ .LogFrmBox {
+ margin: auto;
+ width: 270px;
+}
+ .LoginFrm li {
+ padding:6px 10px;
+}
+ .RemBoxLeft {
+ float: left;
+ padding: 0 10px;
+ width: auto;
+}
+ .ForgotBoxRi {
+ float: left;
+ padding: 0 10px;
+ width: auto;
+}
+.LogTxtRowRi {
+ border-top: 1px solid #dddddd;
+ margin: 24px 0 0;
+ padding: 8px 20px;
+}
+ .MidTabNaviBox {
+ width:300px;
+}
+.MidTabBoxTop {
+height:auto;
+}
+ .MidTabNavi li {
+width:49%;
+border-bottom:1px solid #292927;
+}
+ .MidTabNavi li.Last {
+ border-right:1px solid #292927;
+}
+.MidTabNavi li a {
+ font-size: 15px;
+ padding:0 0;
+ width:100%;
+ text-align:center;
+}
+.TopStoreList {
+margin:0 0 15px 0;
+width:300px;
+}
+ .MidTabConBox {
+ width:300px;
+}
+ .SrhBox {
+ width:280px;
+}
+.SrhMidFild {
+width:43%;
+}
+ .TpStrLiTopLeft {
+ width: 230px;
+}
+ .TpStrLiTopLeft p {
+ font-size: 12px;
+}
+ .TpStrLiTopLeft h2 {
+ font-size: 18px;
+}
+.TopStoreLimg img {
+width:100%;
+padding:0;
+}
+ .TopStoreTxt p {
+ font-size: 13px;
+ padding-top:3px;
+ padding-bottom:3px;
+}
+ .TopStoreNavi li {
+ margin: 0 0 0 7px;
+}
+ .SrhDropMenu {
+width:100%;
+}
+
+
+
+
+
+
+
+
+/*------------------------------14/08/2014----------Listing Page-------------------*/
+.SrhFildHead {
+width:110px;
+}
+.SrhCityHeadRow {
+width:105px;
+padding:0 10px;
+}
+.HeadSrhBox {
+margin: 17px 0 0;
+}
+.Logo.LogiInnerPage {
+width:100%;
+text-align:center;
+border-bottom:1px solid #ccc;
+}
+ .MidHeading h1 {
+ font-size: 25px;
+}
+ .MidSubPageRow {
+ margin: auto;
+ width:300px;
+}
+
+
+
+
+
+/*------------------------------18/08/2014----------contact us Page-------------------*/
+
+.MidHeadContact h1 {
+ margin: auto;
+ width:84%;
+ font-size: 18px;
+}
+.ContactFrmLeft h2 {
+font-size: 20px;
+}
+.MidConBox {
+ margin: auto;
+ width:84%;
+}
+.ConctMidMap img {
+width:100%;
+}
+ .ContactFrmLeft {
+ float: left;
+ width:100%;
+ margin:0 0 15px 0;
+}
+ .ContactFrmLRight {
+ float: right;
+ width:100%;
+}
+.CntBtnFild {
+width:100%;
+padding:0;
+}
+ .ContactFrm li.Width50Pre {
+ width: 100%;
+}
+ .CntFild.FloatRight {
+ float: left;
+}
+.CntFild {
+width:92%;
+}
+
+/*----------------------Add Business Page----------------------------*/
+.AddBusinessTab {
+width:300px;
+}
+.AddBusinessTab li {
+margin: 0 5px;
+}
+.AddBusinessTab li a {
+width:90px;
+height:100px;
+}
+.AddBusinessTab li a label.AddBusinTxtTab {
+font-size:12px;
+}
+.AddBusinessTab li a span.AddBusinIconTab {
+background-size:30px 30px;
+margin:15px 0;
+height:40px;
+}
+.AddBusinessTabBg {
+height:180px;
+}
+ .JoinNowBoxIn {
+width:300px;
+margin:auto;
+}
+.JoinNowBoxIn p {
+font-size:20px;
+}
+ .AddBusiMidTxt {
+width:250px;
+}
+.AddBusiMidFrmRow {
+width:250px;
+}
+.AddBusiFild {
+margin: 0 0 15px;
+ padding: 0 2%;
+ width: 96%;
+}
+.AddBusiSeFild {
+width:100%;
+margin: 0 0 15px;
+}
+.AddBusiFrmSubmit {
+width:250px;
+}
+a.AddMoreLink {
+right:0;
+bottom: -10px;
+}
+.AddBusiMidTop p {
+font-size:20px;
+}
+ .AddBusiMidTxt p {
+ font-size: 16px;
+}
+ .AddBusiMidFild.AdverFild .AddBusiFild {
+margin: 0 0 15px;
+ padding: 0 2%;
+ width: 96%;
+}
+ .AddBusiMidFild.AdverFild .AddBusiSeFild {
+width:100%;
+margin: 0 0 15px;
+}
+
+
+/*----------------------Advertise Page----------------------------*/
+
+.AddBusiMid.AdvertiseMiddBox .AddBusiMidTxt {
+ width:300px;
+}
+ .AddBusiMid.AdvertiseMiddBox .AddBusiMidFrmRow {
+ width:300px;
+}
+ .AddBusiMid.AdvertiseMiddBox .AddBusiFrmSubmit {
+ width:300px;
+}
+ .AdverListIn {
+ width:300px;
+}
+ .AdverListRow {
+ float: none;
+ margin: 0 auto;
+ width:300px;
+}
+ .AdverListImg {
+margin-top:25px;
+}
+ .AdverListTxt {
+margin-bottom:25px;
+}
+.AdverListIn h2 {
+font-size:20px;
+}
+.AdverListTxt h3 {
+font-size:18px;
+}
+/*-----------------------------20/08/2014------------------------*/
+.HeadSrhBox.HeadSrhRow .SrhDropMenu {
+left: -150px;
+    top: 34px;
+    width: 300px;
+}
+.AddCityFild {
+width:98%;
+}
+
+
+
+/*----------------------Add Business Page----------------------------*/
+
+.AbtMidSliderIn p img {
+ padding: 10px 0 0;
+ width:100%;
+}
+ .AbtMidLiRow {
+ float: none;
+ margin:20px auto;
+ width: 300px;
+ border-bottom:1px solid #ccc;
+ padding:15px 0;
+}
+ .AbtMidFrmRow li.AbtFrmLeftFild {
+ float: left;
+ width: 100%;
+}
+ .AbtMidFrmRow li.AbtFrmRiFild {
+ float: right;
+ width: 100%;
+}
+ .AbtTxtMidLeft p span.AbtListImg {
+ float: left;
+ margin: 0;
+ width: 100%;
+ text-align:center;
+}
+.AbtTxtMidLeft p label {
+ border-bottom: 1px solid #fff;
+ color: #fff;
+ float: left;
+ font-size: 15px;
+ font-weight: 400;
+ line-height: 18px;
+ padding: 0 0 12px;
+ text-align: center;
+ width: 100%;
+}
+ .AbtTxtMidRight {
+ float: right;
+ margin: 5px 0;
+ width: 100%;
+}
+ .AbtTxtMidLeft {
+ margin: 5px 0;
+ width: 100%;
+}
+ .AbtMidFrmRow {
+ width:300px;
+}
+ .AbtImgTxtLiRow {
+ float: none;
+ margin: 10px auto;
+}
+.AbtMidFrmIn {
+width:300px;
+margin:auto;
+}
+.AbtSocialMid {
+width:300px;
+margin:auto;
+}
+.AbtImgTxtListIn {
+width:300px;
+margin:auto;
+}
+.AbtTxtMidIn {
+width:300px;
+margin:auto;
+}
+.AbtMidListIn {
+width:300px;
+margin:auto;
+}
+.AbtMidBoxIn {
+width:300px;
+margin:auto;
+padding:25px 0;
+}
+.AbtMidSliderIn {
+width:300px;
+margin:auto;
+padding:20px 0;
+}
+.AboutMidBanIn {
+width:300px;
+margin:auto;
+padding:20px 0;
+}
+.UserTxtAbt h1 {
+font-size:30px;
+font-weight:400;
+text-align:center;
+color:#fff;
+}
+.UserTxtAbt p {
+font-size:17px;
+padding:10px 0;
+font-weight:400;
+text-align:center;
+color:#fff;
+}
+.AbtMidSliderIn h2 {
+font-size:23px;
+font-weight:700;
+text-align:center;
+color:#009900;
+padding:5px 0;
+}
+.AbtMidSliderIn p {
+font-size:15px;
+font-weight:400;
+text-align:center;
+color:#3b3b3b;
+padding:10px 0;
+line-height:32px;
+}
+.AbtMidBoxIn h2 {
+font-size:30px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:20px 0 10px;
+}
+.AbtMidBoxIn p {
+font-size:15px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:15px 0;
+line-height:32px;
+}
+.AbtMidBoxIn p span {
+font-size:16px;
+font-weight:400;
+text-align:center;
+color:#fff;
+line-height:32px;
+}
+.AbtMidLTxt h2 {
+font-size:18px;
+color:#3b3b3b;
+font-weight:700;
+text-align:center;
+padding:10px 0;
+}
+.AbtMidLTxt p {
+font-size:15px;
+color:#3b3b3b;
+font-weight:400;
+text-align:center;
+padding:0 0;
+line-height:25px;
+}
+.AbtTxtMidLeft p {
+width:100%;
+float:left;
+padding:10px 0;
+font-size:15px;
+color:#fff;
+font-weight:400;
+line-height:32px;
+text-align:justify;
+}
+.AbtTxtMidRight p {
+width:100%;
+float:left;
+padding:10px 0;
+font-size:15px;
+color:#fff;
+font-weight:400;
+line-height:32px;
+text-align:justify;
+}
+.AbtTxtMidRight p label {
+padding:0 0;
+font-size:15px;
+color:#fff;
+font-weight:400;
+line-height:104px;
+}
+.AbtImgTxtListIn h2 {
+font-size:23px;
+font-weight:700;
+color:#009900;
+padding:10px 0;
+text-align:center;
+}
+.AbtImgTxtListIn p {
+font-size:15px;
+font-weight:400;
+color:#3b3b3b;
+padding:0 0;
+text-align:center;
+line-height:32px;
+}
+.AbtTxtLiRow h3 {
+padding:5px 0;
+text-align:center;
+font-size:17px;
+font-weight:700;
+color:#fff;
+}
+.AbtTxtLiRow p {
+padding:0px 0;
+text-align:center;
+font-size:14px;
+font-weight:400;
+color:#fff;
+line-height:16px;
+}
+.AbtSocialMid h2 {
+font-size:30px;
+font-weight:400;
+text-align:center;
+color:#fff;
+padding:10px 0;
+}
+.AbtSocialMid p {
+padding:10px 0;
+text-align:center;
+font-size:15px;
+font-weight:400;
+color:#fff;
+line-height:32px;
+}
+.AbtMidFrmIn h2 {
+font-size:23px;
+color:#009900;
+padding:10px 0;
+text-align:center;
+}
+ .AbtSocialIcon li {
+ display: block;
+ float: left;
+ list-style-type: none;
+ margin: 0 4px;
+}
+
+
+
+
+
+
+
+
+/*--------------Dashbord page------------------*/
+
+
+.DashBordMidIn {
+ margin: auto;
+ width:300px;
+}
+ .LeftDashBord {
+ float: left;
+ width: 100%;
+}
+ .DashMidLTxt {
+ float: left;
+ width: 100%;
+}
+ .RightDashBord {
+ float: right;
+ margin: 20px 0 0;
+ width: 100%;
+}
+ .DashMidLimg {
+ float: left;
+ padding: 10px 0;
+ text-align: center;
+ width: 100%;
+}
+ .DashMidLTxt {
+ float: left;
+ margin: 15px 0 0;
+ width: 100%;
+}
+ .DashLiTopleft {
+ float: left;
+ padding: 0 0 15px;
+ width: 100%;
+ text-align:center;
+}
+ .DashLiTopRight {
+ float: none;
+ margin:auto;
+ width:180px;
+}
+ .DashLiTxtBotm {
+ float: left;
+ padding: 15px 0 0;
+ width: 100%;
+}
+.ListCmtIcon li {
+padding:0 8px;
+}
+.DashMidLiRow {
+width:94%;
+padding:0 3%;
+}
+ .DashLiTopleft h3 {
+font-size: 16px;
+}
+ .DashMidList h2 {
+font-size:18px;
+}
+.ShopFollowRow h2 {
+font-size:18px;
+}
+ .DashBordNav {
+ float: right;
+}
+ .NavIconDash .NaviProfile {
+width: 253px;
+}
+
+
+
+/*********************29-08-2014********************/
+
+
+.Navigation {
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+ float: right;
+ margin-right: 0;
+ width: 50px;
+}
+ .LagDropdown {
+ float: left;
+}
+.LagDropdownBox {
+right: -48px;
+}
+
+
+/*--------------Detail page------------------*/
+.Container {
+width:300px;
+margin:auto;
+}
+.GrayDeLeft {
+ width: 100%;
+ text-align:center;
+}
+ .GrayDeLeft h2 {
+ font-size:22px;
+}
+.GrayDeLeft h2 a {
+width:100%;
+float:left;
+}
+ .GrayDeRight {
+ width: 100%;
+}
+ .TabRatingLeft {
+width:100%;
+}
+ .PhotoListRi {
+width:100%;
+margin:0 0 15px;
+}
+.PhotoListRiMid li {
+ margin: 0 4px;
+ width: 81px;
+}
+.MidTabRow li a {
+font-size: 12px;
+ padding: 0 4px;
+}
+.ProdLikeNumRi li {
+font-size: 13px;
+padding: 0 0 0 5px;
+}
+.ProdLikeNumRi li span {
+font-size:14px;
+}
+.TabProdLeft li {
+border: 1px solid #d9d9cd;
+ padding: 10px 0;
+ text-align: center;
+ width: 47%;
+ background:none;
+ margin:5px 1%;
+}
+ .TabProdLeft li:hover, .TabProdLeft li.Select {
+ border: 1px solid #69d269;
+}
+/*.TabProdLeft li a {
+background:none !important;
+padding:0 !important;
+}
+.TabProdLeft li:hover a, .TabProdLeft li.Select a {
+background:none !important;
+padding:0 !important;
+}*/
+.TabProdLeft li a {
+margin-left:10px;
+}
+ .ProdLikeNumRi {
+ display: block;
+ float: right;
+ list-style-type: none;
+ padding: 15px 0 0;
+ text-align: center;
+ width: 100%;
+}
+.ProdLikeNumRi li {
+text-align:center;
+width:47%;
+}
+ .DetailLeft {
+ width: 100%;
+}
+ .HighlightsLeft {
+ float: left;
+ width: 100%;
+}
+.HighlightsLeList li {
+width:100%;
+}
+.FirstUserBy {
+margin: 15px 0 0;
+ width: 100%;
+}
+ .UserDetailLeft {
+ float: left;
+ width: 100%;
+}
+.BudgetBox {
+width:100%;
+}
+.OpeningHours {
+width:100%;
+}
+ .LocationMap {
+ float: right;
+ padding: 12px 0;
+ width: 100%;
+}
+ .AddPhotoRew {
+ float: left;
+ width: 100%;
+ margin-bottom:15px;
+}
+ .FacebookShare {
+ float: left;
+ margin: 0 0 15px;
+ width: 100%;
+}
+ .UserRevLimg {
+ float: left;
+ margin: 0 0 10px;
+ padding: 12px 0 0;
+ text-align: center;
+ width: 100%;
+}
+ .UserRevLiTxt {
+margin: 0 2%;
+ padding: 10px 3%;
+ width: 90%;
+}
+.TabRewLeft {
+width: auto;
+}
+.TabRewLeft li {
+padding: 0 10px 0 0;
+}
+ .RevFollowBtn {
+ float: right;
+ margin: 15px 0 0;
+}
+ .RightBannerOut {
+ float: left;
+ padding: 10px 0 0;
+ position: relative;
+ right: 0;
+ text-align: center;
+ top: 0;
+ width: 100%;
+}
+.DetailRight {
+width:100%;
+}
+.RightBanAd {
+width:100%;
+text-align:center;
+}
+
+
+
+
+/*------------------------------05/09/2014----------Store List Page-------------------*/
+
+.StoreListLeft {
+ float: left;
+ width: 100%;
+}
+.TypeStoreLeftLi li label {
+width:89%;
+}
+.FeaListLeftSe li label {
+width:89%;
+}
+.StoreListTab li {
+padding: 0;
+ width: 100%;
+}
+ .StoreListRight {
+ border-left: 0 solid #d9d9cd;
+ float: right;
+ width: 100%;
+}
+ .RightListBox {
+ float: right;
+ width: 100%;
+}
+.StoreListRow {
+margin: 5px 2%;
+ width: 96%;
+}
+.StoreListTab li a {
+padding: 0 0;
+font-size: 16px;
+width:100%;
+text-align:center;
+ background: none repeat scroll 0 0 #d9d9cd;
+ color: #424242;
+ border-bottom:1px solid #fff;
+}
+.StoreListTabM {
+padding: 15px 0 0;
+ width: 100%;
+}
+.StoreListTab li a:hover {
+color:#fff;
+background:#009900;
+}
+.StoreListTabM li a {
+ padding: 0 15px 8px;
+}
+ .StoreListImg {
+ float: left;
+ padding: 0 0 10px;
+ text-align: center;
+ width: 100%;
+}
+ .StoreListTxt {
+ float: left;
+ padding: 0 0 15px;
+ text-align: center;
+ width: 100%;
+}
+ .StoreListRi {
+ float: right;
+ width: 100%;
+}
+ .TabListLink li {
+ border-bottom: 1px solid #eee;
+ display: block;
+ float: left;
+ list-style-type: none;
+ margin: 0;
+ padding: 8px 10px;
+ position: relative;
+ width: 268px;
+}
+h2.GrayMidHeading {
+font-size: 23px;
+}
+ .OpenposList li span.OpenposLiLeft {
+width: 60%;
+}
+.OpenposList li label.OpenposLiRight {
+ width: 30%;
+}
+ .PrivacyMidBox p {
+font-size:13px;
+line-height:20px;
+}
+.PrivacyMidBox h3 {
+font-size:18px;
+}
+.PrivacyMidBox ul {
+padding:5px 0;
+margin:0 0 0 15px;
+}
+.PrivacyMidBox ul li {
+padding:6px 0 6px 0px;
+font-size:13px;
+line-height:20px;
+}
+
+
+
+
+
+/*--------------Profile-page page------------------*/
+
+.ProfTxtRi {
+ float: right;
+ width: 100%;
+ text-align: center;
+}
+ .ProfTxtRiTpLe {
+ float: left;
+ width: 100%;
+}
+.ProfTxtRiLi {
+width:100%;
+}
+.ProfTxtRiLi li {
+width:100%;
+}
+.ProfileRating li a span {
+width: 3px;
+}
+.ProfImgLeft {
+width:100%;
+text-align:center;
+}
+ .ProfTxtRiBLe {
+ float: left;
+ text-align: center;
+ width: 100%;
+}
+.ProfileTabMenu li a {
+padding: 0 0;
+width: 300px;
+}
+ .ProfTxtRiTpLe h2 {
+font-size: 24px;
+}
+.ProfileRew li {
+width:100%;
+background:none;
+padding:8px 0;
+text-align:left;
+}
+ .ProfMidLeft {
+ float: left;
+ width: 100%;
+}
+ .ProfMidLeft .UserRevLiTxt {
+ margin: 0 2%;
+ padding: 10px 3%;
+ width: 90%;
+}
+ .UserProLi {
+ float: left;
+ width: 100%;
+ padding:10px 0;
+}
+ .UserProfLiRow.BdrTopBox {
+ border-top:0px solid #eeeee6;
+ padding:0;
+}
+ .ProfMidRight {
+ float: right;
+ padding: 12px 0;
+ width: 100%;
+}
+.RecViewList {
+width:100%;
+}
+.ProfMidLeft .UserRevLiTxt .UserRevLiTxtTop h2 span.ProListHeadLe {
+width:100%;
+}
+.ProfMidLeft .UserRevLiTxt .UserRevLiTxtTop h2 label.TimeListRi {
+width:100%;
+}
+.RecViewLiTxt h3 {
+font-size:18px;
+}
+ .RecViewLiTxt {
+ margin: 0 0 0 80px;
+}
+ .RecViewLimg {
+width:58px;
+}
+.RecViewLimg img {
+width:100%;
+}
+ .ProfwidLimg {
+width: 100px;
+}
+ .ProfwidLimg img {
+ width: 88px;
+}
+ .ProfwidLiTxt {
+ margin: 10px 0 0 125px;
+}
+.ProfwidLiTxt h3 {
+font-size:20px;
+}
+.ProfwidNav li a {
+font-size:14px;
+}
+
+
+/*----------------------Profile Network page------------------10-09-2014-----------*/
+.FollowListRow {
+width: 96%;
+}
+.FollowListRow.BdrRight {
+background:none;
+}
+ .ProfMidLeft .UserRevLiTxt .UserRevLiTxtTop h2.margtopMin {
+ margin: 0 0 -15px;
+}
+.TabRewRight {
+padding: 10px 0 0;
+ width: 100%;
+}
+
+/*----------------------Claim listing page------------------10-09-2014-----------*/
+.AddBusiMidFild.AdverFild .AddBusiFild.ClamListFild {
+ margin-top: 18px;
+ width: 96%;;
+}
+ .ClamLiHeadLeft {
+ float: left;
+ padding: 0;
+ text-align: center;
+ width: 100%;
+}
+ .ClamLiHeadRight {
+ float: right;
+ padding: 15px 0 0;
+ width: 100%;
+}
+a.AnGreenBtn {
+padding:0;
+width:100%;
+text-align:center;
+}
+ .ClamListRow {
+ float: left;
+ margin: 10px 3%;
+ padding: 12px 3%;
+ position: relative;
+ width:88%;
+}
+ .ClamListLeft {
+ float: left;
+ width: 100%;
+}
+ .ClamListRight {
+ float: right;
+ padding: 15px 0 0;
+ width: 100%;
+}
+a.ClaimResBtn {
+padding:0;
+width:100%;
+text-align:center;
+}
+ .ClaimFrmList {
+top: 148px;
+}
+ .ClaimFrmArrow {
+ position: absolute;
+ right: 0;
+ text-align: center;
+ top: -12px;
+ width: 100%;
+}
+
+
+
+
+/*----------------------Stats page------------------10-09-2014-----------*/
+.StatMidTp .ProfileRating li a span {
+ width:2px;
+}
+.StatMidTp .ProfileRating li p {
+font-size:9px;
+}
+.StatMBLeft {
+ width: 100%;
+}
+.StatMBRight {
+width: 100%;
+}
+.StatMBRight li {
+width:96%;
+padding-left:3%;
+}
+.StatMBLeft li {
+width:96%;
+}
+.StatMidTp h2 {
+font-size:24px;
+}
+.StePntList h2 {
+font-size:22px;
+}
+ .MobilenoneTd {
+display:none !important;
+}
+
+
+
+/*-------------------------22-09-2014-------------------*/
+.AddCityFild.EditBirthSeFild {
+ margin: 0 0 12px;
+    width: 94%;
+}
+.TabMenuMid li {
+width:100%;
+border-top: 1px solid #ddd;
+margin:0;
+}
+.TabMenuMid li a {
+font-size: 14px;
+}
+
+.EditProfFrm li {
+    width: 96%;
+}
+
+
+.SetHandleFild {
+width:39%;
+}
+
+.HandleFrmRi {
+    float: left;
+    margin: 15px 0 0;
+    width: 100%;
+}
+.SaveBtnHandle {
+padding:0;
+width:98%;
+}
+
+
+
+
+.ChangeSetList table td {
+padding:23px 0 43px 30px;
+}
+.ChangeSetList table tr.GrayBgListTable {
+background:#f3f3f3;
+}
+.ChangeSetList #no-more-tables td:before {
+top: 21px;
+}
+.OnOffBox {
+margin: -6px 0 0;
+}
+
+
+.LogWithIn {
+padding: 0;
+    width: 100%;
+}
+.LogWithIn li {
+padding: 0 0 10px 0;
+    width: 100%;
+	text-align:center;
+}
+
+.DeleteAccTxt p {
+padding: 2px 15px;
+}
+
+.ListBtnBotm {
+    display: block;
+    padding: 0 15px 30px;
+}
+.SetPassMid {
+width:100%;
+}
+
+
+
+
+.ImgDetMidWrp {
+width:300px;
+display:block;
+}
+.ImgDeLeft {
+width:96%;
+ padding: 8px 2%;
+}
+.ImgDeRight {
+width:100%;
+-moz-border-radius:0 0 6px 6px;
+	-webkit-border-radius:0 0 6px 6px;
+	-khtml-border-radius:0 0 6px 6px;
+	border-radius:0 0 6px 6px;
+}
+
+.TabRewLeft.UserPopImgLi li {
+    padding: 0 10px 0 0;
+}
+
+
+.InviteFriSrh {
+width: 100%;
+}
+
+
+.InviteFriSrh .EditProfFrm.SetPassword li .EditProfFild {
+    max-width: 95%;
+    padding: 0 2%;
+    width: 95%;
+}
+
+.InviteFriSrh .CntBtnFild {
+    margin: 15px 0 0;
+}
+
+.InviteFriSrh .EditProfFrm li label.FrmLabelTxt {
+font-size: 13px;
+}
+
+
+
+
+
+
+/***************************25-09-2014*************************/
+.DashBanTxt h1 {
+font-size:25px;
+}
+.DashBanTxt p span {
+font-size: 18px;
+padding: 0 0 0 27px;
+}
+.UserInfoBan li span.UserBirthBan {
+font-size:13px;
+padding: 0 0 0 27px;
+}
+.UserInfoBan li span.UserLocBan {
+font-size:13px;
+padding: 0 0 0 27px;
+}
+.UserInfoBan li span.UserCallBan {
+font-size:13px;
+padding: 0 0 0 27px;
+}
+
+.DashTxtInLeft {
+    float: left;
+    width: 100%;
+}
+.DashBanImg {
+width:100%;
+text-align:center;
+}
+.DashBanImg img {
+display:initial;
+}
+a.ChangepicIc {
+    bottom: 10px;
+    left: 129px;
+    position: absolute;
+}
+
+.DashBanTxt {
+    margin: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+.DashTxtInRig {
+width: 100%;
+}
+
+
+
+
+
+/*----------Blog Css----------*/
+
+.BlogTopBg {
+background-position:-84px 0;
+min-height: 345px;
+}
+
+.BlogNavi {
+ margin: 0 8px 0 0;
+}
+h1.BlogHeading {
+font-size:35px;
+}
+
+
+
+.BlogListMid {
+width:300px;
+}
+.BlogListRow {
+width:280px;
+padding:9px;
+}
+.BlogLiTxtTop h2 {
+font-size:22px;
+}
+.BlogLiTxtTop p {
+font-size: 14px;
+}
+.PostUserBlog {
+width: 100%;
+}
+
+
+.BlogDateLeft p {
+    float: left;
+    line-height: 19px;
+    margin: 0 7px;
+}
+
+
+.BlogDateLeft {
+    border-bottom: 1px solid #eee;
+    margin: 0 0 20px;
+    padding: 12px 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+.AddBusiMidBotm.AdddBusinessForm .AddFrmBoxRowBusiness li {
+width:100%;
+}
+
+.AddBusiMidFild.AdverFild .AddFrmBoxRow li {
+width:100%;
+}
+
+
+
+
+
+.eidtBusiness .EditProfFrmb.FrmMidBox li .EditProfFild {
+    padding: 0 3%;
+    width: 89%;
+}
+.eidtBusiness .EditProfFrmb.FrmMidBox li Select.EditProfFild {
+    padding: 12px 3%;
+    width: 96%;
+}
+.eidtBusiness .EditProfFrmb.FrmMidBox li Select.EditProfFild.EditProfFildHour {
+    padding: 12px 15px;
+    width: 133px;
+}
+.eidtBusiness .CntBtnFild {
+    padding: 0;
+    width: 96%;
+}
+
+
+
+.MidTabConBox.eidtBusiness div.error-message {
+    float: right;
+    width: 97%;
+}
+
+
+.MidTabConBox.EditProfilebOwner .EditProfFild {
+    width: 92%;
+}
+
+.DashBordTabLe.SettingTabDash li ul.TabSubMenu {
+width: 300px;
+}
+
+
+
+
+
+label.switch-toggle.on {
+    background-position: left -29px;
+    background-repeat: no-repeat;
+    background-size: 45px auto;
+    text-indent: -25px;
+}
+
+
+
+label.switch-toggle {
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 45px auto;
+    text-indent: -25px;
+}
+
+label.switch-toggle, label.switch-toggle.on {
+width: 47px;
+height:28px;
+}
+
+.SrhBoxIn.HeaderSrhBox {
+width: 100%;
+ margin: 16px 0 0;
+}
+
+}
+ @media only screen and (min-width:200px) and (max-width: 767px) {
+ .nav, .nav-item a {
+}
+ .nav-item a {
+}
+ .nav-mobile {
+ display:block;
+}
+ .nav {
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+ float:left;
+ height: 0;
+ margin-bottom: -4px;
+ position: absolute;
+ right: 0;
+ width: 300px;
+ z-index: 400;
+ top:39px;
+ -webkit-box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.3);
+-moz-box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.3);
+box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.3);
+ height:0px;
+ z-index:400;
+}
+ .nav-list {
+ display:none;
+ width:100%;
+}
+ .nav-item {
+ width:100%;
+ float:left;
+}
+ .nav-item a {
+ background:#009900;
+ padding:0 10px;
+ width:275px;
+ color:#fff;
+ border-left:0px solid #009900;
+ border-right:0px solid #009900;
+ border-top:0px solid #009900;
+ border-bottom:1px solid #007300;
+ line-height:40px;
+ height:40px;
+ float:left;
+ outline:0;
+}
+ .nav-item a:visited {
+ background:#009900;
+ padding:0 10px;
+ width:300px;
+ color:#fff;
+ border-left:0px solid #009900;
+ border-right:0px solid #009900;
+ border-top:0px solid #009900;
+ border-bottom:1px solid #007300;
+ line-height:40px;
+ height:40px;
+ float:left;
+}
+ .nav-item a:hover, .nav-item a.active {
+ color:#fff;
+ background:#474747;
+ border-left:0px solid #009900;
+ border-right:0px solid #009900;
+ border-top:0px solid #009900;
+ border-bottom:1px solid #007300;
+}
+ .nav-item a.Home {
+background:url(../../img/images_eng/home-icon-nav-wht.png) no-repeat center center #0072aa;
+padding:0 25px;
+}
+.nav-item a.Home:hover, .nav-item a.Home.active {
+background:url(../../img/images_eng/home-icon-nav-wht.png) no-repeat center center #474747;
+}
+ .nav-item:first-child a {
+}
+ .nav-item:last-child a {
+}
+ .nav-active {
+ display:block;
+}
+ .nav-mobile-open {
+}
+.Navigation {
+background:none;
+width:50px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

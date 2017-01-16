@@ -1,0 +1,8 @@
+.arabic-language {}
+body.arabic-language {
+	 text-align:left;	
+}
+
+input,
+select,  
+textarea { text-align:left;}

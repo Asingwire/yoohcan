@@ -1,0 +1,62 @@
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+
+input[type=checkbox]:not(old) + label > span,
+input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 18px;
+  height           : 18px;
+  margin           : 0 5px 0 0;
+  border           : solid 1px #e7e9ed;
+  border-radius    : 100%;
+  background       : #fff;
+  vertical-align   : bottom;
+  
+  -webkit-box-shadow: -1px 0px 10px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 10px -5px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 10px -5px rgba(0,0,0,0.75);
+  
+}
+
+input[type=checkbox]:not(old):checked + label > span,
+input[type=radio   ]:not(old):checked + label > span{
+	background:#fff;
+}
+
+input[type=checkbox]:not(old):checked + label > span:before{
+  content     : '✓';
+  display     : block;
+  width       : 1em;
+  color       : rgb(153,204,102);
+  font-size   : 0.875em;
+  line-height : 1em;
+  text-align  : center;
+  text-shadow : 0 0 0.0714em rgb(115,153,77);
+  font-weight : bold;
+}
+input[type=radio]:not(old) +  label > span > span{
+  display          : block;
+  width            : 8px;
+  height           : 8px;
+  margin           : 4px;
+  border-radius    : 100%;
+  background       : #b5bcc9;
+}
+
+input[type=radio]:not(old):checked +  label > span > span{
+  background       : #1bb934;
+}

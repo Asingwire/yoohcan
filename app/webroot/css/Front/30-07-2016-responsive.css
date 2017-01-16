@@ -1,0 +1,137 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+.video-title h3 span {
+    font-size: 10px;
+}
+.video-title h3 {
+    font-size:16px;
+}
+.channel_detail {
+    width: 100%;
+}
+.RENEW_BTN{width:70px;}
+		
+}
+@media screen and (max-width:991px) {
+.set-left{
+	padding:0;
+	}
+	.chnl-pad0{
+	padding:0;	
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+.streaming-box_70 {
+    float: left;
+}
+.streaming-box_30 {
+    margin-top: 20px;
+    float: left;
+}
+.cntr-text{border:0px;}
+
+.set-left, .chnl-pad0{
+	padding-top:15px;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+.channel_list_1 li {
+    width: 48%;margin: 0px auto 5% 1.5%;
+}
+
+.video-setting {
+    float: right;
+    display: inline-block;
+    padding: 15px 15px;
+}
+.user_info {
+    left: 10px;
+}
+.user_image {
+    width: 150px;
+    height: 150px;}
+.user_image p{padding: 40px 0px 0px 15px;}\
+.user_image p span {font-size: 30px;}	
+.channel_name h3{font-size:21px;}
+.button-redio {float: left;padding: 0px 7px;}
+.form-control.frm {width: 66%;}
+
+.cntr-text{border:0px;}
+.md-width {
+    width: 100%;
+    margin: 30px auto;
+}
+.md1{overflow: scroll;}
+
+.set-left{
+	padding-top:15px;
+	}
+
+}
+
+@media screen and (max-width:480px) {
+	
+	.strem_box{
+		margin-top:30px;
+	}
+	
+	.chnl-pad0{
+	padding-top:15px;
+	}
+	
+	.set-left{
+	padding-top:0px;
+	}
+	
+.channel_list_1 li {
+    width:100%;margin: 0;
+}
+.video-title {
+    padding: 0px 10px;
+}
+.user_image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.user_image p {
+    padding: 20px 0px 0px 15px;
+}
+.user_image p span {
+    font-size: 16px;
+    display: block;
+    margin-top: -8px;
+}
+.user_image p {
+    padding: 25px 0px 0px 15px;
+}
+.user_info {
+    bottom: 0px;
+}	
+.channel_name {
+    display: block;
+    padding: 0px 0px 10px;
+}
+.file_upload_btn {width:43%;}
+
+.streaming-box_70 {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 20px 0px;
+}
+.form-control.frm {
+    height: 45px;
+    width: 60%;
+}
+.RENEW_BTN{width:65px;}	
+.streaming-box_30 {
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+    padding: 0px;
+}
+.fq_link{font-size:13px;}
+}
