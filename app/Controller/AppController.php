@@ -27,13 +27,15 @@
  */
 class AppController extends Controller {
 	
+	
 	//public $theme 		= 	"Cakestrap";
 	public $components 	= 	array(	
 		'Security',
 		'Auth',
 		'Session',
 		'RequestHandler',
-		'Cookie'
+		'Cookie',
+		'DebugKit.Toolbar'
 	);
 	var $helpers 		= 	array('Html','General','Session');
 	var $uses 			= 	array('Admin');
