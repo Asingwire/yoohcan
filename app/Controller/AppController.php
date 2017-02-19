@@ -34,8 +34,8 @@ class AppController extends Controller {
 		'Auth',
 		'Session',
 		'RequestHandler',
-		'Cookie',
-		'DebugKit.Toolbar'
+		'Cookie'
+		//'DebugKit.Toolbar'
 	);
 	var $helpers 		= 	array('Html','General','Session');
 	var $uses 			= 	array('Admin');

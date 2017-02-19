@@ -1,3 +1,78 @@
+/* bitmovin intergration */
+/*streams page*/
+.colour_blue{ color: #4584EF; }
+
+/*start_streaming*/
+#video_stream_frame_f{
+	background-color: #FFFFFF;
+	width: 100%;
+	height: auto;
+	color: #4584EF;
+	text-align: center;
+	font-size: 100px;
+}
+
+.icons_f{
+
+	font-size: 35px;
+	color: #666666;
+}
+
+.icons_large_f{
+
+	font-size: 45px;
+	color: #509EE2;
+}
+
+#record_f{
+	
+	color: #FE2020;
+}
+
+#video_stream_bottom_controls_f{
+	margin-top: 5px;
+}
+
+.heading_f{
+
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+
+
+.player-wrapper {
+      width:        70%;
+      margin-right: auto;
+      margin-left:  auto;
+      box-shadow:   0 0 30px rgba(0,0,0,0.7);
+}      
+
+
+
+#loading_img_f {
+    background: url("../../img/loader2.gif") 50% 70% no-repeat;
+    height: 100%;
+    
+
+    
+}
+
+.overlay_f {
+    background:#000;
+    opacity:0.8;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+}
+
+/*before bitmovin */
+
 .dashboard-menu .dashbord-menu03 li .activeSelect{ color:#2299f1;}
 .dashbord-menu02 li.faq.activeSelect a{ background:url(../../img/Front/faq-icn.png) no-repeat left -28px;color:#2299f1;}
 

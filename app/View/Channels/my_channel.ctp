@@ -9,17 +9,52 @@
 	  
 		<?php
 		if(!empty($latest_live_stream))
-		{
+		{ 
+			
 		?>
-	  
-		<div id='wowza_player'></div>
-		<script id='player_embed' src='//player.cloud.wowza.com/hosted/<?php echo $latest_live_stream['Stream']['player_id']; ?>/wowza.js' type='text/javascript'></script>
+
+		<a id='dash_url' href='<?php echo $latest_live_stream['Stream']['stream_mpd_url']; ?>'></a>
+		<a id='hls_url' href='<?php echo $latest_live_stream['Stream']['stream_hls_url']; ?>'></a>
+		<a id='poster_url' href='<?php //echo $latest_live_stream['Stream']['image']; ?>'></a>
+	  	
+	  	<div class="player-wrapper">
+		<div id="player"></div>
+		</div>
+			<script type="text/javascript">
+		   		 var conf = {
+		       				key:       "09ce9730-07fd-46ea-be09-210c0907d5bf",
+		        			source: {
+		          					dash:        "//bitmovin-a.akamaihd.net/content/MI201109210084_1/mpds/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.mpd",
+		          					hls:         "//bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"	
+		          					//poster:      "//bitmovin-a.akamaihd.net/content/MI201109210084_1/poster.jpg"
+		        			}
+		    				};
+
+		    	conf.source.dash = document.getElementById("dash_url").getAttribute("href");
+				conf.source.hls = document.getElementById("hls_url").getAttribute("href");
+
+
+		    	var player = bitmovin.player("player");
+		    	player.setup(conf).then(function(value) {
+		        // Success
+		        console.log("Successfully created bitmovin player instance");
+		        console.log(conf.source.dash);
+		    			}, function(reason) {
+		        // Error!
+		        console.log("Error while creating bitmovin player instance");
+		    			});
+			</script>
+
+
+
+
 		<?php
 		}
 		else
 		{
 			//echo "Please create stream first.";
 			echo $this->Html->image('Front/offline_img3.png',array('alt'=>'offline','title'=>'offline'));
+			
 		}
 		/* else if(!empty($latest_recorded_stream))
 		{

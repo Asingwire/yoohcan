@@ -6,7 +6,7 @@
 			
 			/* $sum_menu_array = array('Account Settings'=>array('redirection'=>array('controller'=>'users','action'=>'dashboard'),'title'=>'Account Settings'),'Channel Manager'=>array('redirection'=>array('controller'=>'channels','action'=>'channel_manager'),'title'=>'Channel Manager'),'Streaming List'=>array('redirection'=>array('controller'=>'streams','action'=>'index'),'title'=>'Streaming List'),'Messages'=>array('redirection'=>array('controller'=>'users','action'=>'messages'),'title'=>'Messages'),'Statistics'=>array('redirection'=>array('controller'=>'users','action'=>'statistics'),'title'=>'Statistics')); */
 			
-			$sum_menu_array = array('My Account'=>array('redirection'=>array('controller'=>'users','action'=>'dashboard'),'title'=>'My Account'),'My Channel'=>array('redirection'=>array('controller'=>'channels','action'=>'channel_manager'),'title'=>'My Channel'),'My Streams'=>array('redirection'=>array('controller'=>'streams','action'=>'index'),'title'=>'My Streams'));
+			$sum_menu_array = array('My Account'=>array('redirection'=>array('controller'=>'users','action'=>'dashboard'),'title'=>'My Account'),'My Channel'=>array('redirection'=>array('controller'=>'channels','action'=>'channel_manager'),'title'=>'My Channel'),'My Streams'=>array('redirection'=>array('controller'=>'streams','action'=>'index'),'title'=>'My Streams'),'Start Streaming'=>array('redirection'=>array('controller'=>'streams','action'=>'start_streaming'),'title'=>'Start Streaming'));
 			foreach($sum_menu_array as $menu_name=>$menu_redirection)
 			{
 				///pr($menu_redirection['redirection']);
@@ -25,7 +25,7 @@
 			}
 			?>
 			
-			<li><?php echo $this->Html->link('Start Streaming', 'javascript:;', array("onclick"=>"openModal();currentSlide(1)","title"=>"My Streams", "escape"=>false)); ?></li>
+			<!--<li><?php echo $this->Html->link('Start Streaming', 'javascript:;', array("onclick"=>"openModal();currentSlide(1)","title"=>"My Streams", "escape"=>false)); ?></li>-->
 			<?php /*<li><a href="#">Security & Privacy</a></li> */ ?>
 			<?php /*<li><a href="<?php $this->Html->url(array('controller'=>'streams','action'=>'settings')) ?>">Streaming Settings</a></li> */ ?>
 		</ul>

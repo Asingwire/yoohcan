@@ -1268,7 +1268,7 @@ class ChannelsController extends AppController {
 		$this->loadModel('Stream');
 		$this->loadModel('RecordingStream');
 		$channel_detail = $this->Channel->find('first',array('conditions'=>array('Channel.user_id'=>$user_id)));
-		$latest_live_stream = $this->Stream->find('first',array('conditions'=>array('Stream.user_id'=>$user_id,'Stream.stream_state'=>STARTED)));
+		$latest_live_stream = $this->Stream->find('first',array('conditions'=>array('Stream.user_id'=>$user_id,'Stream.stream_state'=>STARTED), 'order' => array('Stream.created' => 'desc')));
 		
 		//$latest_recorded_stream = $this->RecordingStream->find('first',array('conditions'=>array('RecordingStream.user_id'=>$user_id),'order'=>array('RecordingStream.id'=>'DESC')));
 		//$this->set('latest_recorded_stream',$latest_recorded_stream);

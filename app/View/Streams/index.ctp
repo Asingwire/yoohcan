@@ -6,27 +6,30 @@
 		<?php echo ($this->Element('Front/User/left_sub_menu'));?>
 		<div class="tab-content">			
 			
-			<div class="table-responsive" style="float: left;margin-left: 14px;width: 80%;">
+			<div class="table-responsive" style="float: left;margin-left: 14px;width: 50%;">
 		
-				<div class="col-md-6 streaming-box_70 set-left">
+				<div class="col-md-12 streaming-box_70 set-left">
 					<div class="row">
 						<p class="hedding_in">My Streams </p>
+						<span class="pull-right"><?php  echo ($this->Html->link('Add Stream', array('controller'=>'streams','action' => 'add'), array('escape' => false,'title'=>'start', 'type'=>'button', 'class'=>'btn btn-primary'))); ?></span>
 					</div>
 				</div>
-				<table class="table table-bordered table-striped">
+
+				<?php if(!empty($data)){ $c=1; foreach($data as $key=>$val){ ?>
+				<table class="table table-condensed table-striped">
 					<thead>
 						<tr>
-							<th><?php echo $this->Paginator->sort('stream_image','Stream Image');?></th>
-							<th class="resource-name"><?php echo $this->Paginator->sort('title','Title');?></th>
-							<th><?php echo $this->Paginator->sort('stream_name','Stream Key');?></th>
-							<th><?php echo $this->Paginator->sort('primary_server','URL');?></th>
-							<th class="resource-link">Actions</th>
+							
+							<th>Stream <?php echo $c; ?></th>
+							<th></th>
+							
 						</tr>
 					</thead>
 					<tbody>
-						<?php if(!empty($data)){ $c=1; foreach($data as $key=>$val){ ?>
+						
 						<tr>
-							<td style="width:10%">
+							<th class="colour_blue">Stream Image</th>
+							<td style="">
 							<?php
 							
 							$imagePath		=	IMAGE_PATH_FOR_TIM_THUMB.'/'.STREAM_IMAGE_FULL_DIR.'/';
@@ -44,32 +47,81 @@
 							?>
 							
 							</td>
-							<td><?php echo $val['Stream']['title']; ?></td>
-							<td><?php
-								echo $val['Stream']['stream_name'];
-							?></td>
-							<td><?php 
-							if($val['Stream']['stream_encoder_type']== 'wowza_gocoder')
-							{
-								echo "rtsp://".$val['Stream']['primary_server'];
-							}
-							else
-							{
-							
-								echo $val['Stream']['primary_server'];
-							}
+							</tr>
 
+							<tr>
+							<th class="colour_blue resource-name">Stream Name</th>
+							<td><?php echo $val['Stream']['title']; ?></td>
+							</tr>
+
+							<tr>
+							<th class="colour_blue">Stream Key</th>
+							<td><?php
+								echo $val['Stream']['stream_key'];
 							?></td>
+							</tr>
+
+							<tr>
+							<th class="colour_blue">RTMP/FMS PUSH URL</th>
+							<td><?php
+								echo $val['Stream']['rtmp_url'];
+							?></td>
+							</tr>
+
+							<tr>
+							<th class="colour_blue">MPD URL</th>
+							<td><?php
+								echo $val['Stream']['stream_mpd_url'];
+							?></td>
+							</tr>
+
+							<tr>
+							<th class="colour_blue">HLS URL</th>
+							<td><?php
+								echo $val['Stream']['stream_hls_url'];
+							?></td>
+							</tr>
+
+							<tr>
+							<th class="colour_blue">Audio Sample Rate (Format)</th>
+							<td><?php
+								echo '48 kHz';
+							?></td>
+							</tr>
+
+							<tr>
+							<th class="colour_blue">Video Frame Rate (FPS)</th>
+							<td><?php
+								echo '24.00 FPS';
+							?></td>
+							</tr>
+
+							<tr>
+							<th class="colour_blue">Status</th>
+							<td><?php if($val['Stream']['instance_status'] == 1){
+								echo 'RUNNING';
+							}else{ echo 'TERMINATED'; }
+							?></td>
+							</tr>
+
+							<tr>
+							<th class="colour_blue resource-link">Actions</th>
 							<td>
 							
 							<?php 
-							echo $this->Html->link($this->Html->image('Front/edit.png',array('alt'=>'edit','title'=>'edit')),array('controller'=>'streams','action'=>'edit',$val['Stream']['id']),array('escape'=>false,'alt'=>'edit','title'=>'edit'));
+							/*echo $this->Html->link($this->Html->image('Front/edit.png',array('alt'=>'edit','title'=>'edit')),array('controller'=>'streams','action'=>'edit',$val['Stream']['id']),array('escape'=>false,'alt'=>'edit','title'=>'edit'));*/
 
-							echo ($this->Html->link('<span class="glyphicon glyphicon-facetime-video "></span>', array('action' => 'detail', $val['Stream']['id']), array('escape' => false,'style'=>'color:#343c47;','title'=>'Play')));
-							echo "&nbsp;";
+							/*echo ($this->Html->link('<span class="glyphicon glyphicon-facetime-video "></span>', array('action' => 'detail', $val['Stream']['id']), array('escape' => false,'style'=>'color:#343c47;','title'=>'Play')));
+							echo "&nbsp;";*/
 							
 							
-							echo ($this->Html->link('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $val['Stream']['id']), array('escape' => false,'style'=>'color:#343c47;','title'=>'Delete')));
+							/*echo ($this->Html->link('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $val['Stream']['id']), array('escape' => false,'style'=>'color:#343c47;','title'=>'Delete')));
+							echo "&nbsp;";*/
+
+							if($val['Stream']['instance_status'] == 1){
+							echo ($this->Html->link('<span class="glyphicon glyphicon-off"></span>', array('action' => 'terminate', $val['Stream']['instance_id']), array('escape' => false,'style'=>'color:#343c47;','title'=>'Shutdown')));
+							}
+							
 							/* if(!empty($val['Stream']['stream_key']))
 							{
 							
@@ -101,11 +153,16 @@
 							</td>
 						</tr>
 						
-						<?php $c++; } } else {?>
 						
-						<tr>
-							<td colspan="5"><?php  echo $this->Element('no_record_found',array('message'=>'No stream found.')); ?></td>
-						</tr>
+							<td colspan="2"></td>
+						</tr>						
+					</tbody>
+				</table>
+					<?php $c++; } } else {?>
+						
+						<div>
+							<td colspan="2"><?php  echo $this->Element('no_record_found',array('message'=>'No stream found.')); ?></td>
+						</div>
 						
 						
 						
@@ -113,10 +170,6 @@
 						}
 						?>
 						<tr>
-							<td colspan="5"><?php  echo ($this->Html->link('Add Stream', array('controller'=>'streams','action' => 'add'), array('escape' => false,'title'=>'start'))); ?></td>
-						</tr>						
-					</tbody>
-				</table>
 			</div>
 		</div>
 	</div>

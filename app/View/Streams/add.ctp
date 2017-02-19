@@ -1,3 +1,6 @@
+<div class="overlay_f">
+<div id="loading_img_f"></div>
+</div>
 <?php
 	echo $this->Html->css(array('datetimepicker/bootstrap-datetimepicker'));
 	echo($this->Html->script(array('datetimepicker/moment','datetimepicker/bootstrap-datetimepicker.min')));
@@ -48,22 +51,40 @@
 					<?php echo ($this->Form->input("image", array( 'label'=>'Image<span class="red_star_mendatry">*</span>',"type"=>"file","div"=>false,"class"=>"file"))); ?>
 				</div>
 				<div class="col-md-12">
-					<?php  echo ($this->Form->input('title', array('div'=>false, 'placeholder'=>false, 'label'=>'Title<span class="red_star_mendatry">*</span>',"autocomplete"=>"off", "class" => "signfild","maxlength"=>200)));?>
+					<?php  echo ($this->Form->input('title', array('div'=>false, 'placeholder'=>false, 'label'=>'Livestream Name<span class="red_star_mendatry">*</span>',"autocomplete"=>"off", "class" => "signfild","maxlength"=>200)));?>
 				</div>
 				<div class="col-md-12">
 					<?php  echo ($this->Form->input('subject', array('div'=>false, 'placeholder'=>false, 'label'=>'Subject<span class="red_star_mendatry">*</span>',"autocomplete"=>"off", "class" => "signfild")));?>
 				</div>
 				<div class="col-md-12">
+				<?php echo $this->Html->link($this->Html->image('tooltip.png',array('class'=>'tooltip_img')),"javascript:;",array('alt'=>'Edit Info','title'=>'A stream key is required in oreder to connect your streaming software. This can be anything you want e.g. My_live_stream','escape'=>false,'class'=>'tooltip_img')); ?>
+					<?php  echo ($this->Form->input('stream_key', array('div'=>false, 'placeholder'=>false, 'label'=>'Stream Key<span class="red_star_mendatry">*</span>',"autocomplete"=>"off", "class" => "signfild")));?>
+				</div>
+				<div class="col-md-12">
+					<?php echo ($this->Form->input('segment_length', array('options'=> array('1'=>'1 Second Video Segments','2'=>'2 Second Video Segments' ,'10'=>'10 Second Video Segments', '15'=>'15 Second Video Segments'), 'selected'=>'2','div' => false, 'label' => 'Select Video Segment Length<span class="red_star_mendatry">*</span>'))); ?>
+				</div>
+				<div class="col-md-12">
+					<?php echo ($this->Form->input('encoding_profile', array('options'=> array('1920x1080'=>'FullHD-1080p profile','1280x720'=>'HD-720p profile' ,'854x480'=>'SD-480p profile'), 'empty'=>'Select Encoding Profile','div' => false, 'label' => 'Select Encoding Profile<span class="red_star_mendatry">*</span>'))); ?>
+				</div>
+				<div class="col-md-12">
+				<?php echo $this->Html->link($this->Html->image('tooltip.png',array('class'=>'tooltip_img')),"javascript:;",array('alt'=>'Edit Info','title'=>'Your Timeshift value has to be a value between 60 to 3600 seconds','escape'=>false,'class'=>'tooltip_img')); ?>
+					<?php  echo ($this->Form->input('timeshift', array('div'=>false, 'placeholder'=>false, 'label'=>'TimeShift<span class="red_star_mendatry"></span>',"autocomplete"=>"off", "class" => "signfild")));?>
+				</div>
+				<div class="col-md-12">
+				<?php echo $this->Html->link($this->Html->image('tooltip.png',array('class'=>'tooltip_img')),"javascript:;",array('alt'=>'Edit Info','title'=>'Your Maximum Start Time offset should be 172800 sec','escape'=>false,'class'=>'tooltip_img')); ?>
+					<?php  echo ($this->Form->input('live_edge_offset', array('div'=>false, 'placeholder'=>false, 'label'=>'Live Edge Offset<span class="red_star_mendatry"></span>',"autocomplete"=>"off", "class" => "signfild")));?>
+				</div>
+				<div class="col-md-12">
 				<?php echo $this->Html->link($this->Html->image('tooltip.png',array('class'=>'tooltip_img')),"javascript:;",array('alt'=>'Edit Info','title'=>'When selecting the encoder, this is the program used for customising and connecting the stream, if you have a preferred program select that otherwise we’d advise OBS, which is free to use.','escape'=>false,'class'=>'tooltip_img')); ?>
 					<?php echo ($this->Form->input('stream_encoder_type', array('options'=>Configure::read('Stream.Encoder.Type'), 'empty'=>'Select Encoder','div' => false, 'label' => 'Select Encoder<span class="red_star_mendatry">*</span>',"data-live-search"=>"true"))); ?>
 				</div>
-				<div class="col-md-12">
+				<!--<div class="col-md-12">
 					<?php echo ($this->Form->input('stream_broadcast_location', array('options'=>$broadcast_location, 'empty'=>'--Select--','div' => false, 'label' => 'Which location is closest to where you\'re broadcasting from?<span class="red_star_mendatry">*</span> ',"data-live-search"=>"true"))); ?>
-				</div>
-				<div class="col-md-12" id="stream_aspect_ration_options">
+				</div>-->
+				<!--<div class="col-md-12" id="stream_aspect_ration_options">
 				<?php echo $this->Html->link($this->Html->image('tooltip.png',array('class'=>'tooltip_img')),"javascript:;",array('alt'=>'Edit Info','title'=>'Aspect ratio is you preferred video sizing and quality. The most used setting here is 1280x720.','escape'=>false,'class'=>'tooltip_img')); ?>
 					<?php echo $this->Element('/Front/Streams/stream_aspect_ration_options'); ?>
-				</div>
+				</div>-->
 				<div class="col-md-12" id="bitrate_renditions">
 					<?php echo $message; ?>
 				</div>
@@ -100,14 +121,14 @@
 						</span>
 					</div>
 				</div>
-				<div class="col-md-12">
+				<!--<div class="col-md-12">
 					<label>Do you want to record this live stream?</label>
-					<?php echo $this->Form->input('recording_enabled', array('type'=>'checkbox','label'=>'Yes, record this live stream')); ?>
-				</div>
+					<?php echo $this->Form->input('recording_enabled', array('type'=>'checkbox', 'label'=>'Yes, record this live stream')); ?>
+				</div>-->
 				<div class="col-md-12">
 					<?php  echo ($this->Form->input('stream_bio', array('div'=>false, 'label'=>'Video Description', "class" => "signfild1", 'rows'=>'5')));?>
 				</div>
-				<div class="col-md-12">
+				<!--<div class="col-md-12">
 					<?php  echo ($this->Form->input('twitter_link', array('div'=>false, 'placeholder'=>false, 'label'=>'Twitter Link',"autocomplete"=>"off", "class" => "signfild")));?>
 				</div>
 				<div class="col-md-12">
@@ -115,12 +136,12 @@
 				</div>
 				<div class="col-md-12">
 					<?php  echo ($this->Form->input('facebook_link', array('div'=>false, 'placeholder'=>false, 'label'=>'Facebook Link',"autocomplete"=>"off", "class" => "signfild")));?>
-				</div>
+				</div>-->
 				<div class="col-md-12">
 					<?php  echo ($this->Form->input('notes', array('div'=>false, 'placeholder'=>false, 'label'=>'Note',"autocomplete"=>"off", "class" => "signfild1","maxlength"=>30)));?>
 				</div>
 				<div class="col-md-12">
-					<?php  echo ($this->Form->submit("Add", array('class' => 'submit_btn', "div"=>false)));?>
+					<?php  echo ($this->Form->submit("Add", array('id' => 'create_stream_f','class' => 'submit_btn', "div"=>false)));?>
 				</div>
 
 				
@@ -153,6 +174,7 @@
 				</div>
 				 */?>
 				 
+				 
 				
 			</div>
 			
@@ -162,6 +184,13 @@
 
 <?php echo $this->element('Front/footer'); ?>
 <script>
+
+$("#create_stream_f").click(function () {
+    $(".overlay_f").show();
+});
+
+
+
 
 $(document).on('click',".default_play_pause_btn",function(){ 
 

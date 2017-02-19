@@ -97,7 +97,9 @@
  *	));
  */
 Cache::config('default', array('engine' => 'File'));
-CakePlugin::load('DebugKit');
+//CakePlugin::load('DebugKit');
+App::import('Vendor', array('file' => 'autoload'));
+\bitcodin\Bitcodin::setApiToken('679a1568f5dae291100536c361a9b916ca7ab6cc3f0e238356a52ede22f51c18');
 
 /**
  * The settings below can be used to set additional paths to models, views and controllers.

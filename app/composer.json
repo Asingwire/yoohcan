@@ -1,0 +1,6 @@
+{
+"require": 
+  {
+    "bitmovin/bitcodin-php": "1.14.*"
+  }
+}

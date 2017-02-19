@@ -7,7 +7,9 @@
 		<?php echo $this->Html->charset(); ?>
 		<script type="text/javascript">
 			var SiteUrl = "<?php echo Configure::read('App.SiteUrl');?>";
-		</script>		
+		</script>
+		<!-- bitdash player -->
+  		<script type="text/javascript" src="https://bitmovin-a.akamaihd.net/bitmovin-player/stable/7/bitmovinplayer.js"></script>		
 		<?php			
 			echo $this->Html->script('jquery.min');
 			echo $this->Html->script('bootstrap');

@@ -19,8 +19,10 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
+//App::import('Vendor', 'all_bitcodin_classes', array('file' => 'bitcodin' . DS . 'lib' . DS . 'all_bitcodin_classes.php' ));
+//require_once(APP.'Vendor'.DS.'bitcodin'.DS.'lib'.DS.'EncodingProfileConfig.php');
+//require_once APP.'Vendor'.DS.'bitcodin'.DS.'all_bitcodin_classes.php';
 App::uses('AppController', 'Controller');
-
 /**
  * user content controller
  *
@@ -1178,12 +1180,29 @@ class StreamsController extends AppController {
 	
 	
 	}
+
+
+	public function start_streaming()
+	{
 	
-	
-	
+		$this->loadModel('Channel');
+		$channel_exists = $this->Channel->find('count',array('conditions'=>array('Channel.user_id'=>$this->Session->read('Auth.User.id'))));
+		if($channel_exists == '0')
+		{
+			$this->Session->setFlash('Please create the channel first.', 'flash_bad');
+			$this->redirect(array('controller'=>'channels','action'=>'channel_manager'));
+		}
+
+		$this->layout = 'lay_stream_detail';
+
+
+
+
+
+	}	
+
 	public function add(){
-	
-		// check user channel exists start//
+		
 		
 		$this->loadModel('Channel');
 		$channel_exists = $this->Channel->find('count',array('conditions'=>array('Channel.user_id'=>$this->Session->read('Auth.User.id'))));
@@ -1192,7 +1211,11 @@ class StreamsController extends AppController {
 			$this->Session->setFlash('Please create the channel first.', 'flash_bad');
 			$this->redirect(array('controller'=>'channels','action'=>'channel_manager'));
 		}
+
+		$user_id = $this->Session->read('Auth.User.id');	
+		$channel = $this->Channel->find('first', array('conditions'=>array('Channel.user_id'=>$user_id),'fields'=>array('Channel.id','Channel.user_id')));
 		
+
 		// check user channel exists end //
 	
 		$this->layout = 'lay_dashboard';
@@ -1207,149 +1230,120 @@ class StreamsController extends AppController {
 		$message  = '';
 		$this->set('message',$message);
 		
-		
-		
-		
+
 		if(!empty($this->request->data)){
-			
-			
+
 			if (!isset($this->request->params['_Token']['key']) || ($this->request->params['_Token']['key'] != $this->request->params['_Token']['key'])) {
 				$blackHoleCallback = $this->Security->blackHoleCallback;
 				$this->$blackHoleCallback();
             }
 			
 			$this->Stream->set($this->request->data['Stream']);
-			$this->Stream->setValidation('front_add');
-			
 			
 			if ($this->Stream->validates()) {
-			
-				$aspect_ratio_array = explode('x',$this->request->data['Stream']['aspect_ratio']);
+
 				
-				$encoder_type = $this->request->data['Stream']['stream_encoder_type'];	
-				if($this->request->data['Stream']['stream_encoder_type'] == 'ffsplit')
-				{
-					$encoder_type = 'other_rtmp';
-				}
-				
-				
-				$recording_enabled = "false";
-				if($this->request->data['Stream']['recording_enabled'] == '1')
-				{
-					$recording_enabled = "true";
-				}
-				
-				
-				$add_stream_request = '{
-				  "live_stream": {
-					"name": "'.$this->request->data['Stream']['title'].'",
-					"transcoder_type": "transcoded",
-					"billing_mode": "pay_as_you_go",
-					"broadcast_location": "'.$this->request->data['Stream']['stream_broadcast_location'].'",
-					"recording":"'.$recording_enabled.'",
-					"encoder": "'.$encoder_type.'",
-					"delivery_method": "push",
-					"disable_authentication":"true",
-					"aspect_ratio_width": '.$aspect_ratio_array[0].',
-					"aspect_ratio_height": '.$aspect_ratio_array[1].',
-					"player_responsive": "true",
-					"player_countdown": "false",
-					"hosted_page": "true",
-					"hosted_page_sharing_icons": "true",
-					"player_width":500
-					}
-				}';
-				
-			
-				$ch = curl_init('https://api.cloud.wowza.com/api/v1/live_streams/');
-				//$ch = curl_init('https://api-sandbox.cloud.wowza.com/api/v1/live_streams/');
-				curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-				curl_setopt($ch, CURLOPT_POSTFIELDS, $add_stream_request);
-				curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);    
-				curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-					'Content-Type: application/json ;charset=utf-8',
-					'wsc-api-key:'.Configure::read('WOWZA_API_KEY'),
-					'wsc-access-key:'.Configure::read('WOWZA_ACCESS_KEY')
-					)                                                                       
-				); // live
-				
-				/* curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
-				'Content-Type: application/json ;charset=utf-8', 
-				'wsc-api-key:9lJxxxxxQQ5hv7ze2vr70hXNQTcoikFqXJ5nTcz5Q6Hn834j5MRH5G7YGjRcepIQ13146',
-				'wsc-access-key:bKJgrvQ68b2ze51ARiQqcvsv8BQ9qp7hqYaqvcUim2JvNzJr4rl9yK0hvTcJ3562'
-				)                                                                       
-				);  *///sandbox
-				
-				
-				
-				$result = curl_exec($ch);
-				curl_close($ch);
-				$response_array = json_decode($result,true);
-				/* echo $result;
-				pr($response_array);
-				die; */
-				if(!isset($response_array['error']) && !isset($response_array['meta']))
-				{
-					$this->loadModel('Channel');
-					$user_id = $this->Session->read('Auth.User.id');	
-					$channel_detail = $this->Channel->find('first',array('conditions'=>array('Channel.user_id'=>$user_id),'fields'=>array('Channel.id','Channel.user_id')));
-					$this->request->data['Stream']['stream_request'] = $add_stream_request;
-					$this->request->data['Stream']['stream_response'] = $result;
-					$this->request->data['Stream']['stream_key'] = $response_array['live_stream']['id'];
-					$this->request->data['Stream']['player_id'] = $response_array['live_stream']['player_id'];
-					if(isset($response_array['live_stream']['connection_code']))
-					{
-						$this->request->data['Stream']['connection_code'] = $response_array['live_stream']['connection_code'];
-					}
-					/* $this->request->data['Stream']['connection_code_expires_at'] = date('Y-m-d H:i:s',strtotime($response_array['live_stream']['connection_code_expires_at'])); */
-					$this->request->data['Stream']['user_id'] = $user_id;
-					if(isset($channel_detail) &&  !empty($channel_detail['Channel']['id']))
-					{
-						$this->request->data['Stream']['channel_id'] = $channel_detail['Channel']['id'];
-					}
-					$this->request->data['Stream']['stream_name'] = $response_array['live_stream']['source_connection_information']['stream_name'];
-					$this->request->data['Stream']['primary_server'] = $response_array['live_stream']['source_connection_information']['primary_server'];
-					if($this->Stream->save($this->request->data))
-					{
-					
-						$stream_id	=	$this->Stream->id;
-						// add scheduling start //
-						
-						if(isset($response_array['live_stream']['id']) && !empty($response_array['live_stream']['id']) && !empty($this->request->data['Stream']['schedule_start_date']) && !empty($this->request->data['Stream']['schedule_end_date']))
-						{
-						
-							$schedule_start_date = $this->request->data['Stream']['schedule_start_date'].":00";
-							$schedule_end_date = $this->request->data['Stream']['schedule_end_date'].":00";
+
+				//\bitcodin\Bitcodin::setApiToken('679a1568f5dae291100536c361a9b916ca7ab6cc3f0e238356a52ede22f51c18'); // Your can find your api key in the settings menu. Your account (right corner) -> Settings -> API
+
+			    $namingPostfix = date("YmdHis");
+
+			    /* CREATE ENCODING PROFILE FOR YOUR LIVE STREAM */
+			    $encodingProfileConfig = new \bitcodin\EncodingProfileConfig();
+			    $encodingProfileConfig->name = $this->request->data['Stream']['title'];
+			    $encodingProfileConfig->segmentLength = !empty($this->request->data['Stream']['segment_length']) ? $this->request->data['Stream']['segment_length'] : 2;  //Custom segment length in seconds
+
+			    /* CREATE VIDEO STREAM CONFIGS */
+			    if($this->request->data['Stream']['encoding_profile'] == '1920x1080'){
+			    $videoStreamConfig = new \bitcodin\VideoStreamConfig();
+			    $videoStreamConfig->bitrate = 4800000;
+			    $videoStreamConfig->width = 1920;
+			    $videoStreamConfig->height = 1080;
+			    $videoStreamConfig->rate = 24;
+
+			 	}elseif($this->request->data['Stream']['encoding_profile'] == '1280x720'){
+
+			    $videoStreamConfig = new \bitcodin\VideoStreamConfig();
+			    $videoStreamConfig->bitrate = 2400000;
+			    $videoStreamConfig->width = 1280;
+			    $videoStreamConfig->height = 720;
+			    $videoStreamConfig->rate = 24;
+			    }else{
+
+			    $videoStreamConfig = new \bitcodin\VideoStreamConfig();
+			    $videoStreamConfig->bitrate = 1200000;
+			    $videoStreamConfig->width = 854;
+			    $videoStreamConfig->height = 480;
+			    $videoStreamConfig->rate = 24;
+			    }
+
+			    /* CREATE AUDIO STREAM CONFIGS */
+			    $audio = new \bitcodin\AudioStreamConfig();
+			    $audio->bitrate = 128000;
+			    $audio->samplerate = 48000;
+
+			    $encodingProfileConfig->videoStreamConfigs[] = $videoStreamConfig;
+			    $encodingProfileConfig->audioStreamConfigs[] = $audio;
+
+			    /* CREATE ENCODING PROFILE */
+			    $encodingProfile = \bitcodin\EncodingProfile::create($encodingProfileConfig);
+
+			    /* CREATE OUTPUT */
+			    $outputConfig = new \bitcodin\S3OutputConfig();
+			    $outputConfig->name = $this->request->data['Stream']['title']."AWS_OUTPUT".$user_id;
+			    $outputConfig->accessKey = "AKIAIQQGTZ2OAK7XXCVQ";
+			    $outputConfig->secretKey = "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";
+			    $outputConfig->bucket = "yoohcan.streams";
+			    $outputConfig->region = \bitcodin\AwsRegion::US_WEST_2;
+			    $outputConfig->prefix =  $this->request->data['Stream']['stream_key']."_".$namingPostfix;
+			    $outputConfig->makePublic = true;
+
+			    $output = \bitcodin\Output::create($outputConfig);
+
+			    /* CREATE LIVE STREAM */
+			    $livestreamName = $this->request->data['Stream']['title'];
+			    $livestreamStreamKey = $this->request->data['Stream']['stream_key'];
+			    $timeShift = !empty($this->request->data['Stream']['timeshift']) ? $this->request->data['Stream']['timeshift'] : 600;
+			    $liveEdgeOffset = !empty($this->request->data['Stream']['live_edge_offset']) ? $this->request->data['Stream']['live_edge_offset'] : 60; // Defines the offset in seconds to the time the first segment of your livestream was available. Value range: 1 to 3600
+			    $liveInstance = \bitcodin\LiveStream::create($livestreamName, $livestreamStreamKey, $encodingProfile, $output, $timeShift, $liveEdgeOffset);
+
+			    //echo "Waiting until live stream is RUNNING...\n";
+			    while ($liveInstance->status != $liveInstance::STATUS_RUNNING) {
+			        sleep(2);
+			        $liveInstance->update();
+			        if ($liveInstance->status == $liveInstance::STATUS_ERROR) {
+			        	$this->Session->setFlash('Error Occured: Live instance not created.', 'flash_bad');
+			        	$this->redirect(array('controller'=>'streams','action'=>'index'));
+			            
+			        }
+			    }
+
+
+    			$this->Stream->set(array(
+    							'channel_id' =>	$channel['Channel']['id'],
+    							'user_id' => $user_id,
+    							'stream_key' =>	$this->request->data['Stream']['stream_key'],
+    							'title' =>	$this->request->data['Stream']['title'],
+    							'subject' => $this->request->data['Stream']['subject'],
+    							'stream_bio' => $this->request->data['Stream']['stream_bio'],
+    							'notes' => $this->request->data['Stream']['notes'],
+    							'timeshift' => $timeShift,
+    							'live_edge_offset' => $liveEdgeOffset,
+    							'rtmp_url' => $liveInstance->rtmpPushUrl,
+    							'stream_mpd_url' => $liveInstance->mpdUrl,
+    							'stream_hls_url' => $liveInstance->hlsUrl,
+    							'instance_id' => $liveInstance->id,
+    							'output_prefix' => $outputConfig->prefix,
+    							'stream_state' => STARTED
+    							//'encoding_profile_id' => $encodingProfile->$encodingProfileId
+							));
 							
-							
-							
-							//$add_schedule_request = '{"schedule": {"transcoder_id": "'.$response_array['live_stream']['id'].'", "action_type": "start", "start_transcoder": "'.$schedule_start_date.'", "stop_transcoder": "'.$schedule_end_date.'", "recurrence_type": "once"}}';
-							$add_schedule_request = '{"schedule": {"transcoder_id": "'.$response_array['live_stream']['id'].'", "action_type": "start", "start_transcoder": "'.$schedule_start_date.'", "stop_transcoder": "'.$schedule_end_date.'", "recurrence_type": "once"}}';
-							$ch = curl_init('https://api.cloud.wowza.com/api/v1/schedules');
-							curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");       
-							curl_setopt($ch, CURLOPT_POSTFIELDS, $add_schedule_request);   
-							curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);    
-							curl_setopt($ch, CURLOPT_HTTPHEADER, array(      
-							'Content-Type: application/json ;charset=utf-8', 
-								'wsc-api-key:'.Configure::read('WOWZA_API_KEY'),
-								'wsc-access-key:'.Configure::read('WOWZA_ACCESS_KEY')
-								)                                                                       
-							); // live
-							
-						
-							$result_schedule = curl_exec($ch);
-							curl_close($ch);
-							$response_array_schedule = json_decode($result_schedule,true);
-							
-							
-							if(!isset($response_array_schedule['error']))
-							{
-								$this->Stream->id	=	$stream_id;
-								$this->Stream->saveField('schedule_id',$response_array_schedule['schedule']['id'],false);
-							}
-						}
-						// add scheduling end //
-						$p_image	=	$this->request->data['Stream']['image'];
+				if($this->Stream->save()){			
+    		
+				/* add validation too
+				$stream_id = $this->Stream->id;    			
+
+    			$p_image	=	$this->request->data['Stream']['image'];
 					
 						if (!empty($p_image) && $p_image['tmp_name'] != '' && $p_image['size'] > 0) {
 				
@@ -1365,84 +1359,40 @@ class StreamsController extends AppController {
 							if(!empty($this->Upload->result) && empty($this->Upload->errors)) {
 								$this->Stream->id	=	$stream_id;
 								$this->Stream->saveField('stream_image',$imageName,false);
-							}					
+							}
 						}
-					}
-					
-					
-					$this->Session->setFlash("Streams add successfully.", 'flash_good');
-					$this->redirect(array('controller'=>'streams','action'=>'index'));	
-					
-				}
-				else
-				{
-					if(isset($response_array['error']))
-					{
-					$this->Session->setFlash($response_array['error'], 'flash_bad');
-					}
-					if(isset($response_array['meta']['message']))
-					{
-					$this->Session->setFlash($response_array['meta']['message'], 'flash_bad');
-					
-					}
+
+				*/
+
+
+
+
+
+
+    			$this->Session->setFlash("Your streaming instance started successfully", 'flash_good');
 					$this->redirect(array('controller'=>'streams','action'=>'index'));
-					
-				}	
-		
-			} else {
-				
-				
-				if(!empty($this->request->data['Stream']['stream_broadcast_location']))
-				{
-				
-				
-					if (array_key_exists($this->request->data['Stream']['stream_broadcast_location'], Configure::read('Stream.Broadcast.Location')))
-					{
-						$aspect_ration_options =  array('1920x1080'=>'1920 x 1080(1080p)','1280x720'=>'1280 x 720(720p)','1024x576'=>'1024 x 576','896x504'=>'896 x 504','854x480'=>'854 x 480 (480p)','768x432'=>'768 x 432','640x360'=>'640 x 360','512x288'=>'512 x 288','384x216'=>'384 x 216','320x180'=>'320 x 180','256x144'=>'256 x 144','128x72'=>'128 x 72','768x576'=>'768 x 576 (PAL)','704x528'=>'704 x 528','640x480'=>'640 x 480','576x432'=>'576 x 432','512x384'=>'512 x 384','448x336'=>'448 x 336','384x288'=>'384 x 288','320x240'=>'320 x 240','256x192'=>'256 x 192','192x144'=>'192 x 144','128x96'=>'128 x 96','64x48'=>'64 x 48');
-					
-					
-						$this->set('aspect_ration_options',$aspect_ration_options);
-						
-					}
-					else if (array_key_exists($this->request->data['Stream']['stream_broadcast_location'], Configure::read('4K.Broadcast.Location')))
-					{
-						$aspect_ration_options =  array('3840x2160'=>'3840 x 2160','1920x1080'=>'1920 x 1080(1080p)','1280x720'=>'1280 x 720(720p)','1024x576'=>'1024 x 576','896x504'=>'896 x 504','854x480'=>'854 x 480 (480p)','768x432'=>'768 x 432','640x360'=>'640 x 360','512x288'=>'512 x 288','384x216'=>'384 x 216','320x180'=>'320 x 180','256x144'=>'256 x 144','128x72'=>'128 x 72','768x576'=>'768 x 576 (PAL)','704x528'=>'704 x 528','640x480'=>'640 x 480','576x432'=>'576 x 432','512x384'=>'512 x 384','448x336'=>'448 x 336','384x288'=>'384 x 288','320x240'=>'320 x 240','256x192'=>'256 x 192','192x144'=>'192 x 144','128x96'=>'128 x 96','64x48'=>'64 x 48');
-						
-						$this->set('aspect_ration_options',$aspect_ration_options);
-					}
-					
-					
-					
-		
-					
-					
-					if($this->request->data['Stream']['aspect_ratio']=='3840x2160')
-					{
-						$message = 'This setting creates <strong>7 bitrate renditions.</strong>';
-					}
-					else if($this->request->data['Stream']['aspect_ratio']=='1920x1080')
-					{
-						$message = 'This setting creates <strong>6 bitrate renditions.</strong>';
-					}
-					else if($this->request->data['Stream']['aspect_ratio']=='1280x720')
-					{
-						$message = 'This setting creates <strong>5 bitrate renditions.</strong>';
-					}
-					else if($this->request->data['Stream']['aspect_ratio']=='1024x576')
-					{
-						$message = 'This setting creates <strong>5 bitrate renditions.</strong>';
-					}
-					$this->set('message',$message);
-					
-				}
-				
+
+    		}
+
+				$this->Session->setFlash("Stream was created successfully but not saved.", 'flash_good');
+					$this->redirect(array('controller'=>'streams','action'=>'index'));
+
+			}/*else{
+
 				$this->Session->setFlash("Record has not been created", 'flash_bad');
-			}
-		
+				$this->redirect(array('controller'=>'streams','action'=>'index'));
+			}*/
+
+
 		}
+
+
+
+
 		$streaming_guide_pdf = Configure::read("STREAMING_GUIDE_PDF");
 		$this->set('streaming_guide_pdf',$streaming_guide_pdf);
-	
+
+    
 	
 	}
 	
@@ -2532,6 +2482,47 @@ class StreamsController extends AppController {
 		$upcoming_streams_listing = $this->paginate('Stream');
 		$this->set('upcoming_streams_listing',$upcoming_streams_listing);
 	}
+
+	public function terminate($id){
+
+		//$this->loadmodel('Stream');
+
+		$stream = $this->Stream->find('first', array('conditions' => array('Stream.instance_id' => $id)));
+
+		if(isset($stream['Stream']['instance_id']) && !empty($stream['Stream']['instance_id'])){
+			$liveInstance = \bitcodin\LiveStream::get($stream['Stream']['instance_id']);
+
+			\bitcodin\LiveStream::delete($id);
+
+			while ($liveInstance->status != $liveInstance::STATUS_TERMINATED) {
+        		sleep(2);
+        		$liveInstance->update();
+        		if ($liveInstance->status == $liveInstance::STATUS_ERROR) {
+        		$this->Session->setFlash('Error occured: live streaming did not stop.', 'flash_bad');
+        		$this->redirect(array('controller'=>'streams','action'=>'index'));
+            
+
+        		}
+    		}
+
+    		$this->Stream->read(null, $stream['Stream']['id']);
+			$this->Stream->set('instance_status', 0);
+			$this->Stream->save();
+
+    		$this->Session->setFlash('Success: live streaming has stopped.', 'flash_good');
+        	$this->redirect(array('controller'=>'streams','action'=>'index'));
+
+    	}else{
+
+    			$this->Session->setFlash('Error occured: live instance not found.', 'flash_bad');
+        		$this->redirect(array('controller'=>'streams','action'=>'index'));
+    	}
+
+    	$this->redirect(array('controller'=>'streams','action'=>'index'));
+
+
+	}
+	
 	
 	
 	public function delete($id)
