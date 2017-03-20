@@ -3,30 +3,44 @@
 .colour_blue{ color: #4584EF; }
 
 /*start_streaming*/
+#stream_info{
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
 #video_stream_frame_f{
-	background-color: #FFFFFF;
+	background-color: #000000;
 	width: 100%;
 	height: auto;
 	color: #4584EF;
 	text-align: center;
-	font-size: 100px;
+	
 }
 
 .icons_f{
 
 	font-size: 35px;
 	color: #666666;
+	cursor: pointer;
 }
 
 .icons_large_f{
 
 	font-size: 45px;
 	color: #509EE2;
+	cursor: pointer;
 }
 
-#record_f{
+#record_on_f{
 	
 	color: #FE2020;
+	display: none;
+}
+
+#btn-stopbroadcast{
+	
+	color: #509EE2;
+	display: none;
 }
 
 #video_stream_bottom_controls_f{

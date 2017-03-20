@@ -36,7 +36,7 @@ $config['VIDEO.PLAY.TYPE'] 		= 	array(0=>'Start Button Play Video',1=>'Auto Play
 
 $config['Stream.Language'] 		= 	array(1=>'English');
 //$config['Stream.Encoder.Type'] 		= 	array('other_rtmp'=>'OBS','telestream_wirecast'=>'Telestream Wirecast','x_split'=>'X Split','ffsplit'=>'FFsplit');
-$config['Stream.Encoder.Type'] 		= 	array('wowza_gocoder'=>'Wowza Gocoder','other_rtmp'=>'OBS','telestream_wirecast'=>'Telestream Wirecast','x_split'=>'X Split','ffsplit'=>'FFsplit');
+$config['Stream.Encoder.Type'] 		= 	array('other_rtmp'=>'OBS','telestream_wirecast'=>'Telestream Wirecast','x_split'=>'X Split');
 /* $config['Stream.Broadcast.Location'] 		= 	array('asia_pacific_taiwan'=>'Asia Pacific(Taiwan)','eu_belgium'=>'EU(Belgium)','us_central_iowa'=>'US Central(lowa)','us_east_s_carolina'=>'US East(S.Carolina)'); */
 
 $config['Stream.Broadcast.Location'] 		= 	array('asia_pacific_taiwan'=>'Asia Pacific(Taiwan)','eu_belgium'=>'EU(Belgium)','us_central_iowa'=>'US Central(lowa)','us_east_s_carolina'=>'US East(S.Carolina)');

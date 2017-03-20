@@ -1,5 +1,5 @@
 <div class="overlay_f">
-<div id="loading_img_f"></div>
+<div id="loading_img_f"><span class="colour_blue">Your Live streaming instance is starting up. Please wait.</span></div>
 </div>
 <?php
 	echo $this->Html->css(array('datetimepicker/bootstrap-datetimepicker'));

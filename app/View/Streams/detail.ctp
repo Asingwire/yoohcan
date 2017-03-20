@@ -26,177 +26,110 @@
 
 
 
-							?></label><span>Image</span></p>
+							?></label><span class="colour_blue">Image</span></p>
 						</div>
 					</div>			
 					<div class="full-box pad-box">
 						<div class="edt-name">
-							<p><label><?php echo $stream_detail['Stream']['title'] ?></label><span>Title</span></p>
+							<p><label><?php echo $stream_detail['Stream']['title'] ?></label><span class="colour_blue">Title</span></p>
 						</div>
 					</div>
 					<div class="full-box pad-box">
 						<div class="edt-name">
-							<p><label><?php echo $stream_detail['Stream']['subject'] ?></label><span>Subject</span></p>
+							<p><label><?php echo $stream_detail['Stream']['subject'] ?></label><span class="colour_blue">Subject</span></p>
 						</div>
 					</div>
 						
 					<div class="full-box pad-box">
 						<div class="edt-name">
-							<p><label><?php echo $stream_detail['Stream']['stream_bio'] ?></label><span>Bio</span></p>
+							<p><label><?php echo $stream_detail['Stream']['stream_bio'] ?></label><span class="colour_blue">Bio</span></p>
 						</div>
 					</div>
-					<?php
-					if(!empty($stream_detail['Stream']['connection_code']))
-					{
-					?>
+					
+					
 					<div class="full-box pad-box">
 						<div class="edt-name">
-							<p><label id="connection_code_label"><?php echo $stream_detail['Stream']['connection_code'] ?></label><span>Connection Code</span>
-							<?php echo $this->Html->image('ajax-loader.gif', array('style'=>'display: none','title'=>'loading','alt'=>'loading','id'=>'loader','width'=>10,'height'=>10)) ?>
-							</p>
+							<p><label><?php echo $stream_detail['Stream']['stream_key'] ?></label><span class="colour_blue">Stream Key</span></p>
+						</div>
+					</div>
+					
+					<div class="full-box pad-box">
+						<div class="edt-name">
+						
+							
+							<p><label><?php echo $stream_detail['Stream']['rtmp_url']; ?></label><span class="colour_blue">RTMP/FMS PUSH URL</span></p>
 							
 						</div>
-						
-							
-						
-						<a href="javascript:;" id="connection_code_link" > Get New Connection Code</a>
 					</div>
-					<?php
-						
-					}
-					?>
+					
+					<!--<div class="full-box pad-box">
+						<div class="edt-name">
+							<p><label><?php //echo $stream_detail['Stream']['encoding_profile']; ?></label><span class="colour_blue">Aspect Ratio</span></p>
+						</div>
+					</div>-->
 					
 					<div class="full-box pad-box">
 						<div class="edt-name">
-							<p><label><?php echo $stream_detail['Stream']['stream_name'] ?></label><span>Stream Key</span></p>
+							<p><label><?php echo $stream_detail['Stream']['stream_mpd_url']; ?></label><span class="colour_blue">MPEG DASH URL</span></p>
 						</div>
 					</div>
-					
+
 					<div class="full-box pad-box">
 						<div class="edt-name">
-							<?php
-							if($stream_detail['Stream']['stream_encoder_type'] == 'wowza_gocoder')
-							{
+							<p><label><?php echo $stream_detail['Stream']['stream_hls_url']; ?></label><span class="colour_blue">HLS URL</span></p>
+						</div>
+					</div>
+
+					<div class="full-box pad-box">
+						<div class="edt-name">
+							<p><label><?php echo $stream_detail['Stream']['timeshift']; ?></label><span class="colour_blue">Timeshift</span></p>
+						</div>
+					</div>
+
+					<div class="full-box pad-box">
+						<div class="edt-name">
+							<p><label><?php echo $stream_detail['Stream']['live_edge_offset']; ?></label><span class="colour_blue">Live Edge Offset</span></p>
+						</div>
+					</div>
+
+					<div class="full-box pad-box">
+						<div class="edt-name">
+							<p><label>24.00 FPS</label><span class="colour_blue">Video Frame Rate (FPS)</span></p>
+						</div>
+					</div>
+
+					<div class="full-box pad-box">
+						<div class="edt-name">
+							<p><label>48 kHz</label><span class="colour_blue">Audio Sample Rate (Format)</span></p>
+						</div>
+					</div>
+
+					<div class="full-box pad-box">
+						<div class="edt-name">
+							<p><label>
+							<?php if($val['Stream']['instance_status'] == 1){
+								echo 'RUNNING';
+							}else{ echo 'TERMINATED'; }
 							?>
-							<p><label><?php echo "rtsp://".$stream_detail['Stream']['primary_server']; ?></label><span>URL</span></p>
-							<?php
-							}
-							else
-							{
-							?>
-							<p><label><?php echo $stream_detail['Stream']['primary_server']; ?></label><span>URL</span></p>
-							<?php
-							}
-							?>
-						</div>
-					</div>
-					
-					<div class="full-box pad-box">
-						<div class="edt-name">
-							<p><label><?php echo $stream_detail['Stream']['aspect_ratio']; ?></label><span>Aspect Ratio</span></p>
+							</label><span class="colour_blue">STATUS</span></p>
 						</div>
 					</div>
 					
 					
-					<div class="full-box pad-box">
-						<div class="edt-name">
-							<p><label><?php 
-							/* pr($stream_detail);
-							die; */
-							$message= '';	
-							if($stream_detail['Stream']['aspect_ratio']=='3840x2160')
-							{
-								$message = 'Setting: This setting creates <strong>7 bitrate renditions.</strong>';
-							}
-							else if($stream_detail['Stream']['aspect_ratio']=='1920x1080')
-							{
-								$message = 'Setting:This setting creates <strong>6 bitrate renditions.</strong>';
-							}
-							else if($stream_detail['Stream']['aspect_ratio']=='1280x720')
-							{
-								$message = 'Setting:This setting creates <strong>5 bitrate renditions.</strong>';
-							}
-							else if($stream_detail['Stream']['aspect_ratio']=='1024x576')
-							{
-								$message = 'Setting:This setting creates <strong>5 bitrate renditions.</strong>';
-							}
-							echo $message;
-
-							?></label>
-							<span>&nbsp;</span>
-							
-							</p>
-						</div>
-					</div>
-					<div class="full-box pad-box">
-						<div class="edt-name">
-							<p><label><?php
-							if($stream_detail['Stream']['recording_enabled'] == '1' )
-							{	
-								echo "Yes";
-							}else
-							{
-								echo "No";
-							}
-
-							?></label><span>Recording</span></p>
-						</div>
-					</div>
 					
 					
-					<div class="full-box pad-box">
-						<div class="edt-name">
-							<p><label><?php
-							if(!empty($stream_detail['Stream']['schedule_start_date']) && $stream_detail['Stream']['schedule_start_date'] != '0000-00-00 00:00:00')
-							{	
-								echo $stream_detail['Stream']['schedule_start_date']." UTC";
-							}
-
-							?></label><span>Schedule Start Date</span></p>
-						</div>
-					</div>
 					
-					
-					<div class="full-box pad-box">
-						<div class="edt-name">
-							<p><label><?php
-							if(!empty($stream_detail['Stream']['schedule_end_date']) && $stream_detail['Stream']['schedule_end_date'] != '0000-00-00 00:00:00')
-							{	
-								echo $stream_detail['Stream']['schedule_end_date']. " UTC";
-							}
-
-							?></label><span>Schedule End Date</span></p>
-						</div>
-					</div>
-					<?php
-					if($stream_detail['Stream']['stream_state'] == 2)
-					{
-					?>
-						<div class="full-box pad-box">
-						<?php echo $this->Html->link('Stop',array('controller'=>'streams','action'=>'stop_stream',$stream_detail['Stream']['id']),array('escape'=>false,'id'=>'btnStop','class'=>'btn btn-warning')) ?>
-						</div>
-					<?php
-					}
-					elseif($stream_detail['Stream']['stream_state'] == 0 || $stream_detail['Stream']['stream_state'] == 4)
-					{
-					?>
-					<div class="full-box pad-box">
-						<?php echo $this->Html->link('Start','javascript:;',array('escape'=>false,'id'=>'btnStart','class'=>'btn btn-success')) ?>
-					</div>
-					<?php
-					}
-					?>
 				</div>
 			</div>
 			
 			<div class="col-md-6  streaming-box_30 pad0">
 				
-				<div class="stream-details-box">
+				<!--<div class="stream-details-box">
 					<div class="full-box border-none pad20">
 						<div id='wowza_player' style="width:500px; !important"></div>
 						<script id='player_embed' src='//player.cloud.wowza.com/hosted/<?php echo $stream_detail['Stream']['player_id']; ?>/wowza.js' type='text/javascript'></script>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>

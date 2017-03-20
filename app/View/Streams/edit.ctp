@@ -56,15 +56,6 @@
 								
 							</li>
 							<li>
-								<?php  echo ($this->Form->input('twitter_link', array('div'=>false, 'placeholder'=>false, 'label'=>'Twitter Link',"autocomplete"=>"off", "class" => "signfild")));?>
-							</li>
-							<li>
-								<?php  echo ($this->Form->input('linkdin_link', array('div'=>false, 'placeholder'=>false, 'label'=>'Linkedin Link',"autocomplete"=>"off", "class" => "signfild")));?>
-							</li>
-							<li>
-								<?php  echo ($this->Form->input('facebook_link', array('div'=>false, 'placeholder'=>false, 'label'=>'Facebook Link',"autocomplete"=>"off", "class" => "signfild")));?>
-							</li>
-							<li>
 								<?php  echo ($this->Form->input('notes', array('div'=>false, 'placeholder'=>false, 'label'=>'Note',"autocomplete"=>"off", "class" => "signfild1")));?>
 							</li>
 							

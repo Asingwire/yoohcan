@@ -1,4 +1,4 @@
-<?php echo $this->Html->script('nicescroll.min'); ?>
+
 <div class="right-contant" style="min-height:800px;"> 
 <span class="chat-slide"><?php echo $this->Html->link($this->Html->image('Front/open-chat.png'),'javascript:;',array('escape'=>false)); ?></span>
 
@@ -24,31 +24,36 @@
 		</div>-->
 		<div class="col-md-6">
 			
-			<div id="video_stream_top_controls_f"><span class="icons_f glyphicon glyphicon-play" aria-hidden="true"></span>     <span id="record_f" class="icons_f pull-right glyphicon glyphicon-record" aria-hidden="true"></span> </div>
+			<div id="video_stream_top_controls_f"><span id="btn-startbroadcast" class="icons_f glyphicon glyphicon-play" aria-hidden="true"></span><span id="btn-stopbroadcast" class="icons_f glyphicon glyphicon-stop" aria-hidden="true"></span>     <span id="record_on_f" class="icons_f pull-right glyphicon glyphicon-record" aria-hidden="true"></span><span id="record_off_f" class="icons_f pull-right glyphicon glyphicon-record" aria-hidden="true"></span> </div>
 			<br>
 				<div id="video_stream_frame_f">
 
-				<?php echo $this->Html->image('streaming.jpg', ['alt' => 'streaming', 'class' => 'img-responsive']); ?>	
+				<video id="video-local" autoplay width="640px" height="480px" poster="<?php echo APP.webroot.DS.img.DS.player.DS.'VIDEOPLACEHOLDER.jpg'; ?>"></video>	
 			
 
 				</div>
 				<br>
 
 			<div id="video_stream_bottom_controls_f">
-				<select width="250" style="width: 250px">
-  					<option>screen share select</option>
-  					<option>1</option>
-  					<option>2</option>
+				<select id="video_sources_f" width="250" style="width: 250px">
+  				<option>Select Video Source</option>
 				</select>
+				
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<span class="icons_f glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<span class="icons_f glyphicon glyphicon-ice-lolly" aria-hidden="true"></span>				
 				<span class="icons_f pull-right glyphicon glyphicon-cog" aria-hidden="true"></span>
-
+			
 
 			</div>
 			<br>
+			<br>
+
+			<div>
+			<input  placeholder="Stream Title" id="stream_name" width="250" style="width: 250px" value=""/>
+			<input type="hidden" id="user_id" width="250" style="width: 250px" value="$this->Session->read('Auth.User.id')"/>
+			</div>
 
 			<div class="heading_f">Select Template</div>
 			<br>
@@ -65,6 +70,9 @@
 				</label>
 
 			</div>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<div id="stream_info">
+       		</div>
 
 		</div>
 
@@ -163,6 +171,11 @@
   <!--chat-end-->
 
 
+	<?php echo $this->Html->script('nicescroll.min'); ?>
+	<?php echo $this->Html->script('nanocosmos/api/webrtc/nano.webrtc.4.5.3.1.min.js'); ?>
+	<?php echo $this->Html->script('nanocosmos/api/bintu/nano.bintu.0.5.min.js'); ?>
+	<?php echo $this->Html->script('nicescroll.mn.js'); ?>
+	
 
 
 
